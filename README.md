@@ -33,8 +33,8 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 O sistema ScanSchool inicialmente fornece os seguintes relatórios: 
 - Relatório com informações específicas de determinada escola buscada: notas, dados estruturais, localidade;
-- Relatório com listagem de notas de escolas por bairro;
-- Relatório com listagem de notas de escolas por características estruturais;
+- Relatório com listagem das escolas por bairro, de acordo com as notas;
+- Relatório com listagem das escolas por características estruturais, de acordo com as notas;
 - Relatório com listagem de notas de escolas por médias em áreas de conhecimento;
 - Relatório comparativo entre diferentes instituições (quanto à infraestrutura e médias das notas);
 - Relatório listando as melhores escolas do estado; 
