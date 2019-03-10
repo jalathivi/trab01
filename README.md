@@ -30,15 +30,15 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 [Protótipo Balsamiq do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_scanschool.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
+
+O sistema ScanSchool inicialmente fornece os seguintes relatórios: 
+- Relatório com informações específicas de determinada escola buscada: notas, dados estruturais, localidade;
+- Relatório com listagem de notas de escolas por bairro;
+- Relatório com listagem de notas de escolas por características estruturais;
+- Relatório com listagem de notas de escolas por médias em áreas de conhecimento;
+- Relatório comparativo entre diferentes instituições (quanto à infraestrutura e médias das notas);
+- Relatório listando as melhores escolas do estado; 
+- Relatório com as médias da instituição em anos passados.
  
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
