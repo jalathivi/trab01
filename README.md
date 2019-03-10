@@ -27,7 +27,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-![Protótipo Balsamiq do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_scanschool.pdf)<br>
+[Protótipo Balsamiq do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_scanschool.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
