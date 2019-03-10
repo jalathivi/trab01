@@ -11,8 +11,6 @@ Thiago Moreira: thiago.moreira.ribeiro@gmail.com<br>
 Vinicius Freitas: viniciusrocha28@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
 
 A aplicação ScanSchool é um sistema de apoio à decisão que tem como motivação promover um empoderamento informacional para a gerência de escolas, parentes de alunos, os próprios alunos e pesquisadores da área de educação, a fim de contribuir na tomada de decisões gerenciais (escola), escolha do currículo escolar (parentes e aluno) e científica na área de educação (pesquisadores). Seu funcionamento gira em torno dos microdados do ENEM especificamente para o estado do Espírito Santo, dados esses divulgados pelo INEP, e outros dados relativos à infraestrutura das escolas. Para a realização de suas operações, o sistema armazena os dados relativos às escolas e os resultados do ENEM, desse modo, as informações são disponibilizadas em relatórios para escolas, alunos, pais de alunos entre outros usuários, para seus diversos fins. O ScanSchool pode ser utilizado com várias finalidades: escolas podem medir seu desempenho na prova e tomar decisões estratégicas em torno das informações fornecidas ou até mesmo comparar seu desempenho e infraestrutura com o de outras instituições de ensino, e alunos e seus pais podem escolher a melhor instituição que se adeque aos seus requisitos.<br>
  
@@ -28,12 +26,9 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 > O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
+![Protótipo Balsamiq do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_scanschool.pdf)<br>
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
