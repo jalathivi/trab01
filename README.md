@@ -43,7 +43,7 @@ O sistema ScanSchool inicialmente fornece os seguintes relatórios:
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de Dados ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_scanschool.xlsx)<br>
+[Tabela de Dados do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_scanschool.xlsx)<br>
     
 >## Marco de Entrega 01 em: (06/09/2018)<br>
 
