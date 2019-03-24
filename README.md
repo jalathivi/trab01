@@ -21,7 +21,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-[Protótipo Balsamiq do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_lixeira_inteligente.pdf)<br>
+[Protótipo Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_lixeira_inteligente.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
