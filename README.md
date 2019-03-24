@@ -21,7 +21,7 @@ O sistema ScanSchool contará com as informações aqui detalhadas. Das escolas 
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-[Protótipo Balsamiq do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_scanschool.pdf)<br>
+[Protótipo Balsamiq](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_lixeira_inteligente.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
@@ -37,7 +37,7 @@ O sistema ScanSchool inicialmente fornece os seguintes relatórios:
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de Dados do ScanSchool](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_scanschool.xlsx)<br>
+[Tabela de Dados](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_lixeira_inteligente.xlsx)<br>
     
 >## Marco de Entrega 01 em: (06/09/2018)<br>
 
