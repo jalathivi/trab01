@@ -1,4 +1,4 @@
-# TRABALHO 01:  ScanSchool
+# TRABALHO 01:  Lixeira Inteligente
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
@@ -12,7 +12,7 @@ Vinicius Freitas: viniciusrocha28@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 
-A aplicação ScanSchool é um sistema de apoio à decisão que tem como motivação promover um empoderamento informacional para a gerência de escolas, parentes de alunos, os próprios alunos e pesquisadores da área de educação, a fim de contribuir na tomada de decisões gerenciais (escola), escolha do currículo escolar (parentes e aluno) e científica na área de educação (pesquisadores). Seu funcionamento gira em torno dos microdados do ENEM especificamente para o estado do Espírito Santo, dados esses divulgados pelo INEP, e outros dados relativos à infraestrutura das escolas. Para a realização de suas operações, o sistema armazena os dados relativos às escolas e os resultados do ENEM, desse modo, as informações são disponibilizadas em relatórios para escolas, alunos, pais de alunos entre outros usuários, para seus diversos fins. O ScanSchool pode ser utilizado com várias finalidades: escolas podem medir seu desempenho na prova e tomar decisões estratégicas em torno das informações fornecidas ou até mesmo comparar seu desempenho e infraestrutura com o de outras instituições de ensino, e alunos e seus pais podem escolher a melhor instituição que se adeque aos seus requisitos.<br>
+O sistema Lixeira Inteligente tem como objetivo auxiliar na coleta e no descarte de lixo. A aplicação fornecerá o status das lixeiras, apresentará a rota para a lixeira mais próxima disponível para o descarte ou selecionando a melhor rota para coletar os resíduos de lixeiras já cheias, evitando assim o descarte de lixo em lixeiras já cheias e otimizando rotas de coleta de lixo, consequentemente diminuindo o desperdício de recursos e mantendo a cidade limpa. <br>
  
 
 ### 3.MINI-MUNDO Novo<br>
@@ -21,7 +21,7 @@ O sistema ScanSchool contará com as informações aqui detalhadas. Das escolas 
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-[Protótipo Balsamiq](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_lixeira_inteligente.pdf)<br>
+[Protótipo Balsamiq do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_lixeira_inteligente.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
@@ -37,7 +37,7 @@ O sistema ScanSchool inicialmente fornece os seguintes relatórios:
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de Dados](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_lixeira_inteligente.xlsx)<br>
+[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_lixeira_inteligente.xlsx)<br>
     
 >## Marco de Entrega 01 em: (06/09/2018)<br>
 
