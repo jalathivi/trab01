@@ -38,6 +38,7 @@ O sistema ScanSchool inicialmente fornece os seguintes relatórios:
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
 [Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_lixeira_inteligente.xlsx)<br>
+[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_normalizada_lixeira_inteligente.xlsx)<br>
     
 >## Marco de Entrega 01 em: (06/09/2018)<br>
 
