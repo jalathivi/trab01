@@ -48,7 +48,7 @@ O sistema ScanSchool inicialmente fornece os seguintes relatórios:
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+![alt text](https://github.com/discipbd1/trab01/blob/master/images/modelo_lixeira_inteligente.png?raw=true "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
