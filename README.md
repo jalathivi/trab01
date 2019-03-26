@@ -21,7 +21,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-[Protótipo Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/telas_lixeira_inteligente.pdf)<br>
+[Protótipo Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/lixeira_inteligente_telas.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
@@ -35,8 +35,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_lixeira_inteligente.xlsx)<br>
-[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/tabela_normalizada_lixeira_inteligente.xlsx)<br>
+[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/lixeira_inteligente_tabela.xlsx)<br>
+[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/lixeira_inteligente_tabela_normalizada.xlsx)<br>
     
 >## Marco de Entrega 01 em: (06/09/2018)<br>
 
@@ -46,7 +46,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
        
-![](images/modelo_lixeira_inteligente.png)
+![](images/lixeira_inteligente_der.png)
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
