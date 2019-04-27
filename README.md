@@ -61,6 +61,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
+    Entidade Coleta Atributos Dia, Mês, Ano, Hora e Minuto: Em nosso projeto optamos por manter os Atributos que correspondem a data e a hora de modos separados, visando uma busca mais rápida e especifica para os relatórios.
+    
     [atributo]: [descrição da decisão]
     
     EXEMPLO:
@@ -70,6 +72,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 >## Marco de Entrega 02 em: (17/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
+    
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
