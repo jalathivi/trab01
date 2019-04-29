@@ -55,7 +55,13 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 <b>[Tratamento Efetivo]</b>: [Ana Carolina, Pedro Henrique, Emanuel Medeiros, Filipe Ribeiro]
 
 #### 5.2 DECISÕES DE PROJETO
-<b>[Data / Hora]</b>: [Em nosso projeto optamos por manter os atributos que correspondem a data e a hora de modos separados para que haja um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados]
+
+<b>email </b> : Determinamos o atributo como simples, pois apenas um único e-mail será necessário;
+
+<b>longitude / latitude</b> : Optamos por manter os atributos que corresponde as coordenadas de latitude e longitude separados para facilitar a manipulação do mesmo;
+
+<b> data / hora </b> : Optamos por manter os atributos que correspondem a data e a hora de modos separados para ter um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados;
+
 
 >## Marco de Entrega 02 em: (30/04/2019)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
