@@ -53,23 +53,15 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
         Garantir que a semântica dos atributos seja clara no esquema
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas
-    
-        
+  
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Lista de Compras Online]: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos]
+    [Tratamento Efetivo]: [Ana Carolina, Pedro Henrique, Emanuel Medeiros, Filipe Ribeiro]
 
 #### 5.2 DECISÕES DE PROJETO
-    Entidade Coleta Atributos Dia, Mês, Ano, Hora e Minuto: Em nosso projeto optamos por manter os Atributos que 
-    correspondem a data e a hora de modos separados, visando uma busca mais rápida e especifica para os relatórios.
-    
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
+    [Data / Hora]: [Em nosso projeto optamos por manter os atributos que correspondem a data e a hora de modos separados para que haja um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados]
+
 
 >## Marco de Entrega 02 em: (17/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
