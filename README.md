@@ -50,9 +50,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 <b>[Data / Hora]</b>: [Em nosso projeto optamos por manter os atributos que correspondem a data e a hora de modos separados para que haja um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados]
 
 
->## Marco de Entrega 02 em: (17/09/2018)<br>
+>## Marco de Entrega 02 em: (30/04/2019)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
@@ -90,7 +89,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
         a) Quais os principais fluxos de dados de informação no sistema em densenvolvimento (mínimo 3)
         b) Quais as tabelas que conterão mais dados no sistema em densenvolvimento (mínimo 3)
         c) informe quais as 5 principais tabelas do sistema em densenvolvimento.
->## Marco de Entrega 03 em: (27/09/18) <br>
+>## Marco de Entrega 03 em: (13/05/19) <br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
@@ -106,7 +105,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
->## Marco de Entrega 04 em: (18/10/2017)<br>
+
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
@@ -117,6 +116,13 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
+
+>## Marco de Entrega 03 em: (27/05/2019)<br>
+
+#### 9.11 Relatórios e Gráficos 
+    a)análises e resultados provenientes do banco de dados
+
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres 
@@ -132,7 +138,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
         d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
->## Marco de Entrega Final em: (08/11/2018)<br>
+>## Marco de Entrega Final em: (17/06/2019)<br>
         
 ### 14  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
