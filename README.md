@@ -43,11 +43,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](images/lixeira_inteligente_der.png)
 
 #### 5.1 Validação do Modelo Conceitual
-    [Lista de Compras Online]: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos]
-    [Tratamento Efetivo]: [Ana Carolina, Pedro Henrique, Emanuel Medeiros, Filipe Ribeiro]
+<b>[Lista de Compras Online]</b>: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos]<br>
+<b>[Tratamento Efetivo]</b>: [Ana Carolina, Pedro Henrique, Emanuel Medeiros, Filipe Ribeiro]
 
 #### 5.2 DECISÕES DE PROJETO
-    [Data / Hora]: [Em nosso projeto optamos por manter os atributos que correspondem a data e a hora de modos separados para que haja um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados]
+<b>[Data / Hora]</b>: [Em nosso projeto optamos por manter os atributos que correspondem a data e a hora de modos separados para que haja um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados]
 
 
 >## Marco de Entrega 02 em: (17/09/2018)<br>
