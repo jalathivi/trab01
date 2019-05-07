@@ -70,7 +70,60 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+ 
+CIDADAO: Tabela que armazena as informações relativas ao cidadão.
+ cod_cidadao: Identifica um cidadão específico.
+ nome: Nome do cidadão.
+ email: E-mail do cidadão.
+ senha: Contém a senha de login do cidadão.
+ longitude: Contém a longitude do atual do cidadão.
+ latitude: Contém a latitude atual do cidadão.
 
+DESCARTE: Tabela que descreve a operação de descarte entre cidadão e lixeira.
+ cod_lixeira: Identifica uma lixeira específica.
+ cod_cidadão: Identifica um cidadão.
+ nivel: Alteração do volume da lixeira em porcentagem.
+ dat: dia mês e ano da operação.
+ hora: horário da operação.
+
+LIXEIRA: Tabela que descreve as informações relativas às lixeiras. 	
+ cod_lexeira: Identifica uma lixeira específica.
+ cod_regiao: Identifica uma região.
+ longitude: Contém a longitude da lixeira.
+ latitude: Contém a latitude da lixeira.
+ capacidade: Volume máximo suportado.
+
+REGIAO: Tabela que descreve as informações relativas às regiões.
+ cod_regiao: Identifica uma região específica.
+ nome: Nome da regiao.
+
+SITUACAO_OPERACIONAL: Tabela que descreve a situação operacional de lixeiras.
+	cod_lixeira: Identifica uma lixeira específica.
+	cod_coletor: Identifica um coletor específico.
+	cod_status: Identifica um status específico.
+	data: dia mês e ano do registro em SITUACAO_OPERACIONAL .
+	hora: horário do registro em SITUACAO_OPERACIONAL.
+
+STATUS: Tabela que descreve as informações de status.
+	cod_status: Identifica um status específico.
+	descrição: Descreve o significado do status.
+
+COLETA: Tabela que descreve as operação entre coletor e lixeira.
+	cod_lixeira: Identifica uma lixeira específica.
+	cod_coletor: Identifica um coletor específico.
+	nivel: Alteração do volume da lixeira em porcentagem.
+	data: Dia mês e ano da operação de coleta.
+	hora: Hórario da operação coleta.
+
+COLETOR: Tabela que descreve as informações do coletor.
+	cod_coletor: Identifica um coletor específico.
+	longitude: Longitude atual do coletor.
+	latitude: Latitude atual do coletor.
+	placa: Placa do caminhão do coletor.
+	marca: Marca do caminhão do coletor.
+	modelo: Modelo do caminhão do coletor.
+	ano: Ano do caminhão do coletor.
+	capacidade: Volume máximo suportado pelo caminhão do coletor.
 
 
 #
