@@ -145,8 +145,7 @@ COLETOR: Tabela que descreve as informações do coletor.
 #        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico 
-        b) formato .SQL
+[Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/insert.sql)<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
