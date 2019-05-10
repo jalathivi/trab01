@@ -137,8 +137,8 @@ COLETOR: Tabela que descreve as informações do coletor.
 
 #
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)          
+[Modelo Físico SQL](https://github.com/jalathivi/trab01/blob/master/arquivos/lixeira-inteligente_OK.sql)<br>
+                  
 
 
 
