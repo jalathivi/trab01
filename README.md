@@ -132,6 +132,7 @@ COLETOR: Tabela que descreve as informações do coletor.
 #
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
+	![](images/modelo_logico.png)
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
