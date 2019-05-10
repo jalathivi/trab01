@@ -137,7 +137,7 @@ COLETOR: Tabela que descreve as informações do coletor.
 
 #
 ### 7	MODELO FÍSICO<br>
-[Linhas de Criação das Tabelas para o Modelo Físico do BD](https://github.com/jalathivi/trab01/blob/master/arquivos/lixeira-inteligente_OK.sql)<br>
+[Linhas de Criação das Tabelas para o Modelo Físico do BD](https://github.com/jalathivi/trab01/blob/master/arquivos/modelo_fisico.sql)<br>
                   
 
 
