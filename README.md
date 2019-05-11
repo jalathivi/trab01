@@ -157,22 +157,22 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
     SELECT*FROM BAIRRO;
-![](images/Consultas/9.1/bairro.PNG)<br>
+![](images/Consultas/9.1/bairro.PNG)<br><br>
 
     SELECT*FROM CIDADAO;
-![](images/Consultas/9.1/cidadao.PNG)<br>
+![](images/Consultas/9.1/cidadao.PNG)<br><br>
 
     SELECT*FROM COLETA;
-![](images/Consultas/9.1/coleta.PNG)<br>
+![](images/Consultas/9.1/coleta.PNG)<br><br>
 
     SELECT*FROM COLETOR;
-![](images/Consultas/9.1/coletor.PNG)<br>
+![](images/Consultas/9.1/coletor.PNG)<br><br>
 
     SELECT*FROM DESCARTE;
-![](images/Consultas/9.1/descarte.PNG)<br>
+![](images/Consultas/9.1/descarte.PNG)<br><br>
 
     SELECT*FROM LIXEIRA;
-![](images/Consultas/9.1/lixeira.PNG)<br>
+![](images/Consultas/9.1/lixeira.PNG)<br><br>
 
     SELECT*FROM SITUACAO_OPERACIONAL;
 ![](images/Consultas/9.1/situacao_operacional.PNG)<br>
