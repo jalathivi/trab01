@@ -66,66 +66,66 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 >## Marco de Entrega 02 em: (30/04/2019)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
 
-<b>CIDADAO</b>: Tabela que armazena as informações relativas ao cidadão.
+<b>CIDADAO</b>: tabela que armazena as informações relativas ao cidadão.
 - cod_cidadao: Identifica um cidadão específico.
-- nome: Nome do cidadão.
-- email: E-mail do cidadão.
-- senha: Contém a senha de login do cidadão.
-- longitude: Contém a longitude do atual do cidadão.
-- latitude: Contém a latitude atual do cidadão.
+- nome: nome do cidadão.
+- email: e-mail do cidadão.
+- senha: contém a senha de login do cidadão.
+- longitude: contém a longitude do atual do cidadão.
+- latitude: contém a latitude atual do cidadão.
 <br>
 
-<b>DESCARTE</b>: Tabela que descreve a operação de descarte entre cidadão e lixeira.
-- cod_lixeira: Identifica uma lixeira específica.
-- cod_cidadão: Identifica um cidadão.
-- nivel: Alteração do volume da lixeira em porcentagem.
+<b>DESCARTE</b>: tabela que descreve a operação de descarte entre cidadão e lixeira.
+- cod_lixeira: identifica uma lixeira específica.
+- cod_cidadão: identifica um cidadão.
+- nivel: alteração do volume da lixeira em porcentagem.
 - data_descarte: dia, mês e ano da operação de descarte.
 - hora_descarte: horário da operação de descarte.
 <br>
 
-<b>LIXEIRA</b>: Tabela que descreve as informações relativas às lixeiras. 	
-- cod_lixeira: Identifica uma lixeira específica.
-- cod_bairro: Identifica uma região.
-- longitude: Contém a longitude da lixeira.
-- latitude: Contém a latitude da lixeira.
-- capacidade: Volume máximo suportado.
+<b>LIXEIRA</b>: tabela que descreve as informações relativas às lixeiras. 	
+- cod_lixeira: identifica uma lixeira específica.
+- cod_bairro: identifica uma região.
+- longitude: contém a longitude da lixeira.
+- latitude: contém a latitude da lixeira.
+- capacidade: volume máximo suportado.
 <br>
 
-<b>BAIRRO</b>: Tabela que descreve as informações relativas aos bairros.
-- cod_bairro: Identifica um bairro específico.
-- nome: Nome da bairro.
+<b>BAIRRO</b>: tabela que descreve as informações relativas aos bairros.
+- cod_bairro: identifica um bairro específico.
+- nome: nome da bairro.
 <br>
 
-<b>SITUACAO_OPERACIONAL</b>: Tabela que descreve a situação operacional de lixeiras.
-- cod_lixeira: Identifica uma lixeira específica.
-- cod_coletor: Identifica um coletor específico.
-- cod_status: Identifica um status específico.
-- data_status: dia mês e ano do registro em SITUACAO_OPERACIONAL .
+<b>SITUACAO_OPERACIONAL</b>: tabela que descreve a situação operacional de lixeiras.
+- cod_lixeira: identifica uma lixeira específica.
+- cod_coletor: identifica um coletor específico.
+- cod_status: identifica um status específico.
+- data_status: dia mês e ano do registro em SITUACAO_OPERACIONAL.
 - hora_status: horário do registro em SITUACAO_OPERACIONAL.
 <br>
 
-<b>STATUS</b>: Tabela que descreve as informações de status.
-- cod_status: Identifica um status específico.
-- descrição: Descreve o significado do status.
+<b>STATUS</b>: tabela que descreve as informações de status.
+- cod_status: identifica um status específico.
+- descrição: descreve o significado do status.
 <br>
 
-<b>COLETA</b>: Tabela que descreve as operação entre coletor e lixeira.	
-- cod_lixeira: Identifica uma lixeira específica.
-- cod_coletor: Identifica um coletor específico.
-- nivel: Alteração do volume da lixeira em porcentagem.
-- data_coleta: Dia, mês e ano da operação de coleta.
-- hora_coleta: Hórario da operação de coleta.
+<b>COLETA</b>: tabela que descreve as operação entre coletor e lixeira.	
+- cod_lixeira: identifica uma lixeira específica.
+- cod_coletor: identifica um coletor específico.
+- nivel: alteração do volume da lixeira em porcentagem.
+- data_coleta: dia, mês e ano da operação de coleta.
+- hora_coleta: horário da operação de coleta.
 <br>
 
-<b>COLETOR</b>: Tabela que descreve as informações do coletor.	
-- cod_coletor: Identifica um coletor específico.
-- longitude: Longitude atual do coletor.
-- latitude: Latitude atual do coletor.
-- placa: Placa do caminhão do coletor.
-- marca: Marca do caminhão do coletor.
-- modelo: Modelo do caminhão do coletor.
-- ano: Ano do caminhão do coletor.
-- capacidade: Volume máximo suportado pelo caminhão do coletor.
+<b>COLETOR</b>: tabela que descreve as informações do coletor.	
+- cod_coletor: identifica um coletor específico.
+- longitude: longitude atual do coletor.
+- latitude: latitude atual do coletor.
+- placa: placa do caminhão do coletor.
+- marca: marca do caminhão do coletor.
+- modelo: modelo do caminhão do coletor.
+- ano: ano do caminhão do coletor.
+- capacidade: volume máximo suportado pelo caminhão do coletor.
 
 
 #
