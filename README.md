@@ -132,32 +132,21 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ### 6	MODELO LÓGICO<br>
 ![](images/modelo_logico.png)
 
-
-
 #
 ### 7	MODELO FÍSICO<br>
 [Linhas de Criação das Tabelas para o Modelo Físico do BD](https://github.com/jalathivi/trab01/blob/master/arquivos/modelo_fisico.sql)<br>
-                  
-
-
-
+ 
 #        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
 [Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/insert.sql)<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
-        (create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+[Criação e Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/create_insert.sql)<br>
+
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script
-        (Drop para exclusão de tabelas + create para tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
-        c) formato .SQL
+[Criação, Inserção e Exclusão das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/create_insert_drop.sql)<br>
+
 #### 8.4 Principais fluxos de informação e principais tabelas do sistema
         a) Quais os principais fluxos de dados de informação no sistema em densenvolvimento (mínimo 3)
         b) Quais as tabelas que conterão mais dados no sistema em densenvolvimento (mínimo 3)
