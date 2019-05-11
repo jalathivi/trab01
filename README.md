@@ -175,10 +175,10 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](images/Consultas/9.1/lixeira.PNG)<br><br>
 
     SELECT*FROM SITUACAO_OPERACIONAL;
-![](images/Consultas/9.1/situacao_operacional.PNG)<br>
+![](images/Consultas/9.1/situacao_operacional.PNG)<br><br>
 
     SELECT*FROM STATUS;
-![](images/Consultas/9.1/status.PNG)<br>
+![](images/Consultas/9.1/status.PNG)<br><br>
 
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
