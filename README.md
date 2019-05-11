@@ -155,8 +155,32 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+    SELECT*FROM BAIRRO;
+![](images/Consultas/9.1/bairro.PNG)<br>
+
+    SELECT*FROM CIDADAO;
+![](images/Consultas/9.1/cidadao.PNG)<br>
+
+    SELECT*FROM COLETA;
+![](images/Consultas/9.1/coleta.PNG)<br>
+
+    SELECT*FROM COLETOR;
+![](images/Consultas/9.1/coletor.PNG)<br>
+
+    SELECT*FROM DESCARTE;
+![](images/Consultas/9.1/descarte.PNG)<br>
+
+    SELECT*FROM LIXEIRA;
+![](images/Consultas/9.1/lixeira.PNG)<br>
+
+    SELECT*FROM SITUACAO_OPERACIONAL;
+![](images/Consultas/9.1/situacao_operacional.PNG)<br>
+
+    SELECT*FROM STATUS;
+![](images/Consultas/9.1/status.PNG)<br>
+
+
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
