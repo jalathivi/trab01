@@ -154,13 +154,12 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - Coleta 
 - Cidadao 
 ##### As 5 principais tabelas do sistema em densenvolvimento.
-<p>
 - Descarte 
 - Coleta 
 - Cidadao 
 - Coletor
 - Bairro
-<p/>
+
 >## Marco de Entrega 03 em: (13/05/19) <br>
 
 #
