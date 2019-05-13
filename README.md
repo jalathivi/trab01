@@ -148,11 +148,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 [Criação, Inserção e Exclusão das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/create_insert_drop.sql)<br>
 
 #### 8.4 PRINCIPAIS FLUXOS DE INFORMAÇÃO E PRINCIPAIS TABELAS DO SISTEMA
-##### > Os principais fluxos de dados de informação no sistema em densenvolvimento (mínimo 3)
+##### Os principais fluxos de dados de informação no sistema em densenvolvimento (mínimo 3)
 ##### As tabelas que conterão mais dados no sistema em densenvolvimento (mínimo 3)
-- Descarte <br/>
-- Coleta <br/>
-- Cidadao <br/>
+- Descarte 
+- Coleta 
+- Cidadao 
 ###### As 5 principais tabelas do sistema em densenvolvimento.
 >## Marco de Entrega 03 em: (13/05/19) <br>
 
