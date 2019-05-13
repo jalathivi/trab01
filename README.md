@@ -158,7 +158,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - Coleta 
 - Cidadao 
 - Coletor
-- Bairro
+- Lixeira
 
 >## Marco de Entrega 03 em: (13/05/19) <br>
 
