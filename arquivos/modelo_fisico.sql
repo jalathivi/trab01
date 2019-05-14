@@ -33,6 +33,7 @@ CREATE TABLE LIXEIRA (
     capacidade FLOAT,
     latitude FLOAT,
     longitude FLOAT,
+    nivel_atual FLOAT,
     CONSTRAINT pk_lixeira PRIMARY KEY(cod_lixeira),
     CONSTRAINT fk_bairro_lixeira FOREIGN KEY (cod_bairro) REFERENCES BAIRRO (cod_bairro)
 );
@@ -57,7 +58,7 @@ CREATE TABLE SITUACAO_OPERACIONAL (
 CREATE TABLE COLETA (
     cod_coletor INTEGER,
     cod_lixeira INTEGER,
-    nivel FLOAT,
+    volume FLOAT,
     hora_coleta TIME,
     data_coleta DATE,
     CONSTRAINT fk_coletor_coleta FOREIGN KEY (cod_coletor) REFERENCES COLETOR (cod_coletor),
@@ -67,7 +68,7 @@ CREATE TABLE COLETA (
 CREATE TABLE DESCARTE (
     cod_cidadao INTEGER,
     cod_lixeira INTEGER,
-    nivel FLOAT,
+    volume FLOAT,
     data_descarte DATE,
     hora_descarte TIME,
     CONSTRAINT fk_cidadao_descarte FOREIGN KEY (cod_cidadao) REFERENCES CIDADAO (cod_cidadao),
