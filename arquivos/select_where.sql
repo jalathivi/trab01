@@ -1,3 +1,4 @@
+/*9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)*/
 SELECT cod_lixeira, cod_bairro, capacidade FROM lixeira WHERE capacidade > 100;
 SELECT nome FROM cidadao WHERE email = 'maria123@gmail.com';
 SELECT cod_bairro, nome FROM bairro WHERE cod_bairro = '4';
