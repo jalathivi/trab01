@@ -146,12 +146,12 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 [Criação, Inserção e Exclusão das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/create_insert_drop.sql)<br>
 
 #### 8.4 PRINCIPAIS FLUXOS DE INFORMAÇÃO E PRINCIPAIS TABELAS DO SISTEMA
-##### Os principais fluxos de dados de informação no sistema em densenvolvimento
+##### Os principais fluxos de dados de informação no sistema em desenvolvimento
 - Descarte (Porcentagem de lixo descartados nas lixeiras, alimentada pelos cidadadãos)
 - Coleta (Porcentagem de lixo coletados nas lixeiras, alimentada pelos coletores)
 - Situacao_Operacional (Status operacional das lixeiras, alimentada pelos coletores)
 - Lixeira (Porcentagem de lixo atual na lixeira, alimentada pela porcentagem de lixo no descarte e na coleta)
-##### As tabelas que conterão mais dados no sistema em densenvolvimento
+##### As tabelas que conterão mais dados no sistema em desenvolvimento
 - Descarte 
 - Coleta 
 - Cidadao 
