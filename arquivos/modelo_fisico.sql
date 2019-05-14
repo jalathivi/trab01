@@ -29,13 +29,13 @@ CREATE TABLE BAIRRO (
 
 CREATE TABLE LIXEIRA (
     cod_lixeira INTEGER ,
-    cod_regiao INTEGER,
+    cod_bairro INTEGER,
     capacidade FLOAT,
     latitude FLOAT,
     longitude FLOAT,
     nivel_atual FLOAT,
     CONSTRAINT pk_lixeira PRIMARY KEY(cod_lixeira),
-    CONSTRAINT fk_bairro_lixeira FOREIGN KEY (cod_regiao) REFERENCES BAIRRO (cod_bairro)
+    CONSTRAINT fk_bairro_lixeira FOREIGN KEY (cod_bairro) REFERENCES BAIRRO (cod_bairro)
 );
 
 CREATE TABLE STATUS (
