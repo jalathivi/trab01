@@ -149,7 +149,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ##### Os principais fluxos de dados de informação no sistema em densenvolvimento
 - Descarte (Porcentagem de lixo descartados nas lixeiras, alimentada pelos cidadadãos)
 - Coleta (Porcentagem de lixo coletados nas lixeiras, alimentada pelos coletores)
-- Situacao_Operacional (Situação operacional das lixeiras, alimentada pelos coletores)
+- Situacao_Operacional (Status operacional das lixeiras, alimentada pelos coletores)
 - Lixeira (Porcentagem de lixo atual na lixeira, alimentada pela porcentagem de lixo no descarte e na coleta)
 ##### As tabelas que conterão mais dados no sistema em densenvolvimento
 - Descarte 
