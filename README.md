@@ -62,8 +62,6 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 <b> data / hora </b> : Optamos por manter os atributos que correspondem a data e a hora de modos separados para ter um controle mais preciso das informações e seus registros, visando também futuras buscas e relatórios a serem gerados;
 
-
->## Marco de Entrega 02 em: (30/04/2019)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
 
 <b>CIDADAO</b>: tabela que armazena as informações relativas ao cidadão.
@@ -163,7 +161,6 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - Cidadao 
 - Coletor
 - Lixeira
-<br>
 
 #
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
