@@ -48,7 +48,7 @@ INSERT INTO COLETOR (cod_coletor, placa, modelo, marca, ano, capacidade, longitu
 INSERT INTO CIDADAO (cod_cidadao, nome, email, senha, latitude, longitude) VALUES
 	(1,'Livinho Silve','livinho@gmail.com','12312',-20.0507711,-40.2209473),
 	(2,'Maria Joaquina','maria@hotmail.com','12342',-20.0868885,-40.2703857),
-	(3,'Marcelo Paiva','marcelo@hotmail.com','12345',-20.2003460,-40.2484131),
+	(3,'Marcelo Paiva','marcelo@hotmail.com','12345',-20.2003469,-40.2484131),
 	(4,'Livia Estrela','livia@hotmail.com','12344',-20.2621971,-40.3417969),
 	(5,'Kellen Andrade','kellen@gmail.com','12312',-20.3909744,-40.2978516),
 	(6,'Maria Luisa','maria123@gmail.com','12341',-20.2055012,-40.2044678),
