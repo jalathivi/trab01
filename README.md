@@ -149,9 +149,9 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 8.4 PRINCIPAIS FLUXOS DE INFORMAÇÃO E PRINCIPAIS TABELAS DO SISTEMA
 ##### Os principais fluxos de dados de informação no sistema em densenvolvimento (mínimo 3)
-- [ Descarte ] Porcentagem de lixo descartados pelos cidadãos nas lixeiras
-- [ Coleta ] Porcentagem de lixo coletados pelos coletores nas lixeiras
-- [ Situacao_Operacional ] Situação operacional das lixeiras
+- Descarte (Porcentagem de lixo descartados pelos cidadãos nas lixeiras)
+- Coleta (Porcentagem de lixo coletados pelos coletores nas lixeiras)
+- Situacao_Operacional (Situação operacional das lixeiras)
 ##### As tabelas que conterão mais dados no sistema em densenvolvimento (mínimo 3)
 - Descarte 
 - Coleta 
