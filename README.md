@@ -219,7 +219,21 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     FALTA
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
+    SELECT*FROM bairro WHERE nome ILIKE '%jardim%';
+![](images/Consultas/9.4/bairro_ComJardim.PNG)<br><br>
+
+    SELECT*FROM cidadao WHERE nome LIKE 'L%';
+![](images/Consultas/9.4/nomeComL.PNG)<br><br>
+
+    SELECT*FROM coletor WHERE placa LIKE '_T%';
+![](images/Consultas/9.4/coletor_SegundaLetraT.PNG)<br><br>
+
+    SELECT*FROM coletor WHERE marca ILIKE 'MERCEDES BENZ';
+![](images/Consultas/9.4/coletor_MarcaMercedes.PNG)<br><br>
+
+    SELECT*FROM coletor WHERE modelo LIKE 'COLECOM';
+ ![](images/Consultas/9.4/coletor_ModeloColetom.PNG)<br><br>
+ 
     b) Criar uma consulta para cada tipo de função data apresentada.
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
