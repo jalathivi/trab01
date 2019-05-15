@@ -194,9 +194,10 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 [Consultas com Filtros Where](https://github.com/jalathivi/trab01/blob/master/arquivos/select_where.sql)
 <br>
 
-#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
+#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
+[Consultas com Operadores](https://github.com/jalathivi/trab01/blob/master/arquivos/select_logicos_aritmeticos_renomeados.sql)
+<br>
+    FALTA
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
