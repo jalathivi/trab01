@@ -34,7 +34,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - Relatório das lixeiras próximas disponíveis para descarte que informe: coordenadas e códigos das lixeiras próximas;  
 - Relatório das lixeiras que atingiram nível igual ou superior a 70% da capacidade máxima que informe: código e nível de preenchimento das lixeiras;
 - Relatório da rota otimizada para o motorista que informe a rota e o seu tempo médio estimado;
-- Relatório da situação operante das lixeiras que informe: status operacionais das lixeiras, por exemplo: "Quebrada"
+- Relatório da situação operante das lixeiras que informe: status operacionais das lixeiras, por exemplo: "Quebrada".
 
  
  
@@ -83,7 +83,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 <b>LIXEIRA</b>: tabela que descreve as informações relativas às lixeiras. 	
 - cod_lixeira: identifica uma lixeira específica.
-- cod_bairro: identifica uma região.
+- cod_bairro: identifica o bairro.
 - longitude: contém a longitude da lixeira.
 - latitude: contém a latitude da lixeira.
 - capacidade: volume máximo suportado.
