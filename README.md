@@ -76,7 +76,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 <b>DESCARTE</b>: tabela que descreve a operação de descarte entre cidadão e lixeira.
 - cod_lixeira: identifica uma lixeira específica.
 - cod_cidadão: identifica um cidadão.
-- nivel: alteração do volume da lixeira em porcentagem.
+- volume: volume de lixo descartado por um cidadão.
 - data_descarte: dia, mês e ano da operação de descarte.
 - hora_descarte: horário da operação de descarte.
 <br>
@@ -87,6 +87,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - longitude: contém a longitude da lixeira.
 - latitude: contém a latitude da lixeira.
 - capacidade: volume máximo suportado.
+- nivel_atual: valor em porcentagem referente ao volume atual de lixo contido na lixeira.
 <br>
 
 <b>BAIRRO</b>: tabela que descreve as informações relativas aos bairros.
@@ -110,7 +111,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 <b>COLETA</b>: tabela que descreve as operação entre coletor e lixeira.	
 - cod_lixeira: identifica uma lixeira específica.
 - cod_coletor: identifica um coletor específico.
-- nivel: alteração do volume da lixeira em porcentagem.
+- volume: volume de lixo recolhido pelo coletor.
 - data_coleta: dia, mês e ano da operação de coleta.
 - hora_coleta: horário da operação de coleta.
 <br>
