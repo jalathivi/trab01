@@ -48,7 +48,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #
 ### 5.MODELO CONCEITUAL<br>
 
-![](images/lixeira_inteligente_der.png)
+![](images/modelagem/modelo_conceitual.png)
 
 #### 5.1 Validação do Modelo Conceitual
 <b>[Lista de Compras Online]</b>: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos]<br>
@@ -129,7 +129,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #
 ### 6	MODELO LÓGICO<br>
-![](images/modelo_logico.png)
+![](images/modelagem/modelo_logico.png)
 
 #
 ### 7	MODELO FÍSICO<br>
