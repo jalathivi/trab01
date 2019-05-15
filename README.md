@@ -192,8 +192,26 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-[Consultas com Filtros Where](https://github.com/jalathivi/trab01/blob/master/arquivos/select_where.sql)
-<br>
+    SELECT * FROM lixeira WHERE nivel_atual > 70;
+![](images/Consultas/9.2/where_nivel.png)<br><br>
+
+    SELECT * FROM cidadao WHERE email = 'maria123@gmail.com';
+![](images/Consultas/9.2/where_email.png)<br><br>
+
+    SELECT * FROM bairro WHERE cod_bairro = '4';
+![](images/Consultas/9.2/where_codbairro.png)<br><br>
+
+    SELECT * FROM situacao_operacional WHERE cod_status = 1;
+![](images/Consultas/9.2/where_cdstatus.png)<br><br>
+
+    SELECT * FROM coleta WHERE data_coleta > '2019-03-24';
+![](images/Consultas/9.2/where_datacoleta.png)<br><br>
+
+    SELECT * FROM coletor WHERE ano = 2019;
+![](images/Consultas/9.2/where_ano.png)<br><br>
+
+    SELECT * FROM descarte WHERE hora_descarte < '17:00:00';
+![](images/Consultas/9.2/where_horadescarte.png)<br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
 [Consultas com Operadores](https://github.com/jalathivi/trab01/blob/master/arquivos/select_logicos_aritmeticos_renomeados.sql)
