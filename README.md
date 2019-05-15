@@ -191,7 +191,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-[Filtros Where](https://github.com/jalathivi/trab01/blob/master/arquivos/select_where.sql)
+[Consultas com Filtros Where](https://github.com/jalathivi/trab01/blob/master/arquivos/select_where.sql)
 <br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
