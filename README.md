@@ -235,6 +235,30 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
  ![](images/Consultas/9.4/coletor_ModeloColetom.PNG)<br><br>
  
     b) Criar uma consulta para cada tipo de função data apresentada.
+    
+    SELECT*FROM coleta WHERE CURRENT_DATE - data_coleta > 47;
+![](images/Consultas/9.4/coleta_47diasDepois.PNG)<br><br>
+    
+    SELECT cod_coletor,cod_lixeira, age(data_coleta,'2019-03-01')AS intervalo_2019_03_01 FROM coleta; 
+![](images/Consultas/9.4/coleta_Intervalo.PNG)<br><br>
+    
+    SELECT cod_cidadao, cod_lixeira, date_part('hour',hora_descarte) AS hora FROM descarte;
+![](images/Consultas/9.4/descarte_SomenteAsHoras.PNG)<br><br>
+    
+    SELECT cod_cidadao, cod_lixeira, date_part('minute',hora_descarte) AS minutos FROM descarte;
+![](images/Consultas/9.4/descarte_SomenteOsMinutos.PNG)<br><br>
+    
+    SELECT cod_cidadao, cod_lixeira, EXTRACT('year' FROM data_descarte) AS AnoDescarte FROM descarte;
+![](images/Consultas/9.4/descarte_AnoDescarte.PNG)<br><br>
+    
+    SELECT cod_cidadao, cod_lixeira, EXTRACT('month' FROM data_descarte) AS mesDescarte FROM descarte;
+![](images/Consultas/9.4/descarte_MesDescarte.PNG)<br><br>
+    
+    SELECT cod_cidadao, cod_lixeira, EXTRACT('day' FROM data_descarte) AS diaDescarte FROM descarte;
+![](images/Consultas/9.4/descarte_DiaDescarte.PNG)<br><br>
+    
+    SELECT*, age('2020-01-01',data_status) as manutencao_obrigatoria from situacao_operacional;
+![](images/Consultas/9.4/situacao_operacional_ManutencaoObrigatoria.PNG)<br><br>
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
