@@ -1,5 +1,4 @@
-﻿
-/* Drop */
+/*DROP*/
 
 DROP TABLE IF EXISTS CIDADAO CASCADE;
 DROP TABLE IF EXISTS COLETOR CASCADE;
@@ -12,8 +11,7 @@ DROP TABLE IF EXISTS DESCARTE CASCADE;
 
 
 
-
-/* Create */
+/*CREATE*/
 
 CREATE TABLE CIDADAO (
     cod_cidadao INTEGER,
@@ -49,6 +47,7 @@ CREATE TABLE LIXEIRA (
     capacidade FLOAT,
     latitude FLOAT,
     longitude FLOAT,
+    nivel_atual FLOAT,
     CONSTRAINT pk_lixeira PRIMARY KEY(cod_lixeira),
     CONSTRAINT fk_bairro_lixeira FOREIGN KEY (cod_bairro) REFERENCES BAIRRO (cod_bairro)
 );
@@ -73,7 +72,7 @@ CREATE TABLE SITUACAO_OPERACIONAL (
 CREATE TABLE COLETA (
     cod_coletor INTEGER,
     cod_lixeira INTEGER,
-    nivel FLOAT,
+    volume FLOAT,
     hora_coleta TIME,
     data_coleta DATE,
     CONSTRAINT fk_coletor_coleta FOREIGN KEY (cod_coletor) REFERENCES COLETOR (cod_coletor),
@@ -83,13 +82,12 @@ CREATE TABLE COLETA (
 CREATE TABLE DESCARTE (
     cod_cidadao INTEGER,
     cod_lixeira INTEGER,
-    nivel FLOAT,
+    volume FLOAT,
     data_descarte DATE,
     hora_descarte TIME,
     CONSTRAINT fk_cidadao_descarte FOREIGN KEY (cod_cidadao) REFERENCES CIDADAO (cod_cidadao),
     CONSTRAINT fk_lixeira_descarte FOREIGN KEY (cod_lixeira) REFERENCES LIXEIRA (cod_lixeira)
 );
-
 
 
 
@@ -218,6 +216,3 @@ INSERT INTO COLETA (cod_lixeira, cod_coletor, volume, data_coleta, hora_coleta) 
 	(14,2,128,'2019-03-29','13:20:00'),
 	(15,2,180,'2019-03-29','13:22:00'),
 	(16,2,297,'2019-03-29','13:25:00');
-
-
-
