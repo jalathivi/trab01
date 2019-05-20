@@ -13,13 +13,25 @@ SELECT * FROM descarte WHERE NOT data_descarte = '2019-03-27';
 /*Criar no mínimo 3 consultas com operadores aritméticos*/
 
 	/*Calcula o quanto resta para encher a lixeira*/
-SELECT capacidade, nivel_atual, (capacidade - nivel_atual) AS restante FROM lixeira WHERE NOT (capacidade - nivel_atual) < 0;
+SELECT capacidade, nivel_atual, capacidade - ((capacidade * nivel_atual)/100) AS capacidade_disponivel FROM lixeira WHERE NOT (capacidade - ((capacidade * nivel_atual)/100) ) < 0;
 
-	/*Calcula a porcentagem de preenchimento da Lixeira*/
-SELECT ((nivel_atual*100)/capacidade) AS porcentagem_preenchimento FROM lixeira;
+	/*Calcula o volume de preenchimento da Lixeira*/
+SELECT capacidade, (capacidade * nivel_atual)/100 AS volume_preenchido FROM lixeira;
 
-	/*Calcula o nível que a lixeira transbordou*/
-SELECT (nivel_atual-capacidade) AS Transbordado FROM lixeira WHERE nivel_atual > capacidade;
-
+	/*Calcula a capacidade para 70 por cento da lxeira  */
+SELECT capacidade, (capacidade *70)/100 capacidade_70p FROM lixeira;
+								  
+								  
 /*Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas*/
-	FALTA!
+
+
+	/* Lixeiras quebradas */
+SELECT cod_Lixeira as codigo_Lixeiras_Quebradas FROM situacao_operacional WHERE cod_status = 1;	
+
+	/* Lixeiras cheias */
+SELECT cod_Lixeira as codigo_Lixeiras_Cheias FROM lixeira WHERE nivel_atual >= 70;	
+	
+	/* Lixeiras  ok */
+SELECT cod_Lixeira as codigo_Lixeiras_Ok FROM situacao_operacional WHERE cod_status = 3;	
+	
+	
