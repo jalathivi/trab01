@@ -260,7 +260,10 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     SELECT*, age('2020-01-01',data_status) as manutencao_obrigatoria from situacao_operacional;
 ![](images/Consultas/9.4/situacao_operacional_ManutencaoObrigatoria.PNG)<br><br>
 
+
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+
+>## Marco de Entrega 07 em: (20/05/2019)<br>
 
 
 
