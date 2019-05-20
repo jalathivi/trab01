@@ -214,10 +214,40 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](images/Consultas/9.2/where_horadescarte.png)<br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
-[Consultas com Operadores](https://github.com/jalathivi/trab01/blob/master/arquivos/select_logicos_aritmeticos_renomeados.sql)
 <br>
-    FALTA
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    SELECT * FROM coleta WHERE volume < 50 AND data_coleta = '2019-03-27';
+![](images/Consultas/9.3/img1.PNG)<br><br>
+
+	SELECT * FROM lixeira WHERE capacidade > 200 AND NOT nivel_atual = 0;
+![](images/Consultas/9.3/img2.PNG)<br><br>
+
+	SELECT * FROM situacao_operacional WHERE cod_status = 1 OR cod_status = 2;
+![](images/Consultas/9.3/img3.PNG)<br><br>
+
+	SELECT * FROM coletor WHERE marca = 'Volvo' OR ano = 2019;
+![](images/Consultas/9.3/img4.PNG)<br><br>
+	
+	SELECT * FROM descarte WHERE NOT data_descarte = '2019-03-27';
+![](images/Consultas/9.3/img5.PNG)<br><br>
+
+	SELECT capacidade, nivel_atual, capacidade - ((capacidade * nivel_atual)/100) AS capacidade_disponivel FROM lixeira WHERE NOT (capacidade - ((capacidade * nivel_atual)/100) ) < 0;
+![](images/Consultas/9.3/img6.PNG)<br><br>
+
+	SELECT capacidade, (capacidade * nivel_atual)/100 AS volume_preenchido FROM lixeira;
+![](images/Consultas/9.3/img7.PNG)<br><br>
+
+	SELECT capacidade, (capacidade*70)/100 capacidade_70p FROM lixeira;
+![](images/Consultas/9.3/img8.PNG)<br><br>
+
+	SELECT cod_Lixeira as codigo_Lixeiras_Quebradas FROM situacao_operacional WHERE cod_status = 1;	
+![](images/Consultas/9.3/img9.PNG)<br><br>
+
+	SELECT cod_Lixeira as codigo_Lixeiras_Cheias FROM lixeira WHERE nivel_atual >= 70;	
+![](images/Consultas/9.3/img10.PNG)<br><br>
+
+	SELECT cod_Lixeira as codigo_Lixeiras_Ok FROM situacao_operacional WHERE cod_status = 3;	
+![](images/Consultas/9.3/img11.PNG)<br><br>
+
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     SELECT*FROM bairro WHERE nome ILIKE '%jardim%';
 ![](images/Consultas/9.4/bairro_ComJardim.PNG)<br><br>
