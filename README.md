@@ -214,7 +214,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](images/Consultas/9.2/where_horadescarte.png)<br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
-<br>
+<br><br>
+
     SELECT * FROM coleta WHERE volume < 50 AND data_coleta = '2019-03-27';
 ![](images/Consultas/9.3/img1.PNG)<br><br>
 
