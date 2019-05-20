@@ -231,7 +231,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	SELECT * FROM descarte WHERE NOT data_descarte = '2019-03-27';
 ![](images/Consultas/9.3/img5.png)<br><br>
 
-	SELECT capacidade, nivel_atual, capacidade - ((capacidade * nivel_atual)/100) AS capacidade_disponivel FROM lixeira WHERE NOT (capacidade - ((capacidade * nivel_atual)/100) ) < 0;
+	SELECT capacidade, nivel_atual, capacidade - ((capacidade * nivel_atual)/100) AS capacidade_disponivel
+	FROM lixeira WHERE NOT (capacidade - ((capacidade * nivel_atual)/100) ) < 0;
 ![](images/Consultas/9.3/img6.png)<br><br>
 
 	SELECT capacidade, (capacidade * nivel_atual)/100 AS volume_preenchido FROM lixeira;
