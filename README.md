@@ -265,6 +265,23 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 >## Marco de Entrega 07 em: (20/05/2019)<br>
 
+    UPDATE BAIRRO SET nome = 'Jardim Limoeiro' WHERE cod_bairro = 8;
+![](images/Consultas/9.5/bairro_update.PNG)<br><br>
+
+    UPDATE CIDADAO SET latitude = -40.2172186 WHERE nome LIKE 'L%';
+ ![](images/Consultas/9.5/cidadao_update.PNG)<br><br>   
+
+    UPDATE COLETA SET volume = volume*1.1;
+![](images/Consultas/9.5/coleta_update.PNG)<br><br>    
+
+    DELETE FROM DESCARTE WHERE volume <= 100;
+![](images/Consultas/9.5/descarte_delete.PNG)<br><br>    
+
+    DELETE FROM SITUACAO_OPERACIONAL WHERE hora_status < '14:00:00';
+ ![](images/Consultas/9.5/situacao_operacional_delete.PNG)<br><br>   
+
+    DELETE FROM COLETA WHERE data_coleta >'2019-03-26';
+![](images/Consultas/9.5/coleta_delete.PNG)<br><br>
 
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
