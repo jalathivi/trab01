@@ -344,7 +344,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		hora_status
 	FROM LIXEIRA INNER JOIN SITUACAO_OPERACIONAL ON (LIXEIRA.cod_lixeira = SITUACAO_OPERACIONAL.cod_lixeira)
 	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.cod_status = STATUS.cod_status);
-![](/images/Consultas/9.6/join_status.PNG.PNG)<br><br>	
+![](/images/Consultas/9.6/join_status.PNG)<br><br>	
 
 
 	SELECT 
