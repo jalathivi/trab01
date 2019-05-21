@@ -317,7 +317,24 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
-        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
+    SELECT  
+ 	Bairro.nome as Bairro,
+	cidadao.nome as Cidadao, 
+	coleta.nivel as Ultima_Coleta, 
+	coletor.placa, 
+	descarte.data_descarte,
+	lixeira.cod_lixeira,
+	situacao_operacional.data_status,
+	status.descricao
+    FROM LIXEIRA INNER JOIN coleta ON (LIXEIRA.COD_lixeira = coleta.COD_lixeira) 
+	INNER JOIN BAIRRO ON (LIXEIRA.COD_BAIRRO = BAIRRO.COD_BAIRRO)
+	INNER JOIN DESCARTE ON (LIXEIRA.COD_LIXEIRA = DESCARTE.COD_LIXEIRA)
+	INNER JOIN CIDADAO ON (CIDADAO.COD_CIDADAO = DESCARTE.COD_CIDADAO)
+	INNER JOIN COLETOR ON (COLETOR.COD_COLETOR = COLETA.COD_COLETOR)
+	INNER JOIN SITUACAO_OPERACIONAL ON (SITUACAO_OPERACIONAL.COD_LIXEIRA = LIXEIRA.COD_LIXEIRA)
+	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.COD_STATUS = STATUS.COD_STATUS);
+
+![](/images/Consultas/9.6/join_all_tables.PNG)<br><br>
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
         
 >## Marco de Entrega 08 em: (21/05/2019)<br>
