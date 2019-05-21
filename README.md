@@ -320,7 +320,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     SELECT  
  	Bairro.nome as Bairro,
 	cidadao.nome as Cidadao, 
-	coleta.nivel as Ultima_Coleta, 
+	coleta.nivel as nivel_atual, 
 	coletor.placa, 
 	descarte.data_descarte,
 	lixeira.cod_lixeira,
