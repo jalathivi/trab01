@@ -417,6 +417,22 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
+
+	SELECT DISTINCT coletor.modelo as modelo_de_caminhao 
+	FROM coletor WHERE modelo in (select distinct coletor.modelo from coletor
+	WHERE modelo <> 'VEGALIX')
+![](/images/Consultas/9.10/img1.PNG)<br><br>
+
+	SELECT lixeira.cod_lixeira as codigo, lixeira.nivel_atual 
+	FROM lixeira WHERE nivel_atual > (SELECT AVG(nivel_atual) FROM lixeira)
+![](/images/Consultas/9.10/img2.PNG)<br><br>
+
+	SELECT lixeira.cod_lixeira, lixeira.nivel_atual 
+	FROM lixeira INNER JOIN bairro on (lixeira.cod_bairro = bairro.cod_bairro) 
+	WHERE lixeira.nivel_atual = (SELECT MAX(lixeira.nivel_atual) FROM lixeira ) 
+![](/images/Consultas/9.10/img3.PNG)<br><br>
+
+
 >## Marco de Entrega 03 em: (27/05/2019)<br>
 
 #### 9.11 Relatórios e Gráficos 
