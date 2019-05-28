@@ -419,8 +419,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 	SELECT DISTINCT coletor.modelo as modelo_de_caminhao 
-	FROM coletor WHERE modelo in (select distinct coletor.modelo from coletor
-	WHERE modelo <> 'VEGALIX')
+	FROM coletor WHERE modelo IN (SELECT DISTINCT coletor.modelo FROM coletor WHERE modelo <> 'VEGALIX')
 ![](/images/Consultas/9.10/img1.PNG)<br><br>
 
 	SELECT lixeira.cod_lixeira as codigo, lixeira.nivel_atual 
@@ -428,7 +427,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](/images/Consultas/9.10/img2.PNG)<br><br>
 
 	SELECT lixeira.cod_lixeira, lixeira.nivel_atual 
-	FROM lixeira INNER JOIN bairro on (lixeira.cod_bairro = bairro.cod_bairro) 
+	FROM lixeira INNER JOIN bairro ON (lixeira.cod_bairro = bairro.cod_bairro) 
 	WHERE lixeira.nivel_atual = (SELECT MAX(lixeira.nivel_atual) FROM lixeira ) 
 ![](/images/Consultas/9.10/img3.PNG)<br><br>
 
