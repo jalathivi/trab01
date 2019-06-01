@@ -411,6 +411,36 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 >## Marco de Entrega 08 em: (21/05/2019)<br>
         
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+
+
+	SELECT cidadao.nome, COUNT(*) AS QTD_Descartes 
+	FROM descarte INNER JOIN cidadao ON (cidadao.cod_cidadao = descarte.cod_cidadao) GROUP BY cidadao.nome ORDER BY cidadao.nome;
+![](/images/Consultas/9.7/groupby_from_descarte_nome.png)<br><br>
+
+	SELECT SUM(volume) AS Volume_Coletado, coleta.data_coleta 
+	FROM coleta GROUP BY coleta.data_coleta;
+![](/images/Consultas/9.7/groupby_from_coleta.png)<br><br>
+
+	SELECT bairro.nome, COUNT(*) AS QTD_Lixeiras 
+	FROM lixeira INNER JOIN bairro ON (bairro.cod_bairro = lixeira.cod_bairro) GROUP BY bairro.cod_bairro ORDER BY COUNT(*);
+![](/images/Consultas/9.7/groupby_from_lixeira_qtdbairros.png)<br><br>
+
+
+	SELECT capacidade AS Capacidades 
+	FROM lixeira GROUP BY capacidade ORDER BY capacidade;
+![](/images/Consultas/9.7/groupby_from_lixeira_capacidades.png)<br><br>
+
+
+	SELECT cod_status, COUNT(*) 
+	FROM situacao_operacional GROUP BY cod_status;
+![](/images/Consultas/9.7/groupby_from_SO_status.png)<br><br>
+
+	
+	SELECT cod_coletor, COUNT(*) AS QTD_REGISTROS 
+	FROM situacao_operacional GROUP BY cod_coletor;
+![](images/Consultas/9.7/groupby_from_situacaoop.png)<br><br>
+
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
