@@ -25,8 +25,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-[Protótipo Lixeira Inteligente - Cidadão](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/prototipo_cidadao.pdf)<br>
-[Protótipo Lixeira Inteligente - Motorista](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/prototipo_motorista.pdf)<br>
+[Protótipo Lixeira Inteligente - Cidadão](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/pdf/prototipo_cidadao.pdf)<br>
+[Protótipo Lixeira Inteligente - Motorista](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/pdf/prototipo_motorista.pdf)<br>
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
@@ -40,8 +40,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/planilhas/tabelao.xlsx)<br>
-[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/planilhas/tabela_normalizada.xlsx)<br>
+[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/planilhas/tabelao.xlsx)<br>
+[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/planilhas/tabela_normalizada.xlsx)<br>
 
 
 
@@ -133,18 +133,18 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #
 ### 7	MODELO FÍSICO<br>
-[Linhas de Criação das Tabelas para o Modelo Físico do BD](https://github.com/jalathivi/trab01/blob/master/arquivos/modelo_fisico.sql)<br>
+[Linhas de Criação das Tabelas para o Modelo Físico do BD](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/modelo_fisico.sql)<br>
  
 #        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-[Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/insert.sql)<br>
+[Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/insert.sql)<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
-[Criação e Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/create_insert.sql)<br>
+[Criação e Inserção das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/create_insert.sql)<br>
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-[Criação, Inserção e Exclusão das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/create_insert_drop.sql)<br>
+[Criação, Inserção e Exclusão das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/create_insert_drop.sql)<br>
 
 #### 8.4 PRINCIPAIS FLUXOS DE INFORMAÇÃO E PRINCIPAIS TABELAS DO SISTEMA
 ##### Os principais fluxos de dados de informação no sistema em desenvolvimento
