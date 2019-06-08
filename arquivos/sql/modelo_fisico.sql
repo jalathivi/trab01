@@ -99,8 +99,6 @@ CREATE TABLE DESCARTE (
 CREATE TABLE SITUACAO_OPERACIONAL (
     cod_coleta INTEGER,
     cod_status INTEGER,
-    data_status DATE,
-    hora_status TIME,
     CONSTRAINT fk_coleta_situacao_operacioanal FOREIGN KEY (cod_coleta) REFERENCES COLETA (cod_coleta),
     CONSTRAINT fk_status_situacao_operacioanal FOREIGN KEY (cod_status) REFERENCES STATUS (cod_status)
 );
