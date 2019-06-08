@@ -90,9 +90,9 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - nome: nome da bairro.
 <br>
 
-<b>SITUACAO_OPERACIONAL</b>: tabela que descreve a situação operacional das lixeiras.
-- data_status: dia mês e ano do registro em SITUACAO_OPERACIONAL.
-- hora_status: horário do registro em SITUACAO_OPERACIONAL.
+<b>SITUACAO_OPERACIONAL</b>: tabela que possui registro da situação operacional das lixeiras.
+- data_status: dia mês e ano do registro.
+- hora_status: horário do registro.
 <br>
 
 <b>STATUS</b>: tabela que descreve as informações de status.
@@ -122,7 +122,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 - ano: ano de lançamento daquele modelo.
 <br>
 
-<b>MARCA</b>: tabela que descreve as informações da marca associada ao fabricante.	
+<b>MARCA</b>: tabela que descreve as informações da marca associada ao fabricante de caminhão.	
 - cod_marca: identifica uma marca específico.
 - nome: nome da marca.
 <br>
