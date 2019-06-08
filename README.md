@@ -39,8 +39,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 
-[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/planilhas/tabelao.xlsx)<br>
-[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/planilhas/tabela_normalizada.xlsx)<br>
+[Tabela de Dados do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/planilhas/tabelao.xlsx)<br>
+[Tabela de Dados Normalizada do Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/planilhas/tabela_normalizada.xlsx)<br>
 
 
 
