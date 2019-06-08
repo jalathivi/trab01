@@ -21,7 +21,6 @@ O sistema Lixeira Inteligente tem como objetivo auxiliar na coleta e no descarte
 
 O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobre o bairro é preciso armazenar o código do bairro e nome do bairro. Sobre a lixeira é necessário armazenar o código da lixeira, código do bairro, localização (longitude e latitude), volume máximo, volume atual de lixo, data/hora da atualização do volume. A lixeira tem Status de Situação Operacional, composto pelo código da lixeira, código do coletor, status, descrição e data/hora. Sobre o cidadão será armazenado o código do cidadão, nome, email, senha e a sua localização (longitude e latitude). Para o coletor é preciso armazenar o código do coletor,  localização atual (longitude e latitude), placa, marca, modelo, ano, volume máximo. A versão do aplicativo voltado para o cidadão necessita do cadastro do mesmo  para permitir visualizar  as lixeiras mais próximas de sua localização com o menor volume de lixo contido.  A versão do aplicativo voltado para os coletores apresentará o melhor caminho para realizar a coleta no bairro selecionado, além de permitir que ele atualize o status operacional da lixeira. A rota será criada com base na prioridade de coleta, ou seja, a necessidade de recolher os lixos nas lixeiras das quais atingirem o volume de resíduo maior ou igual a 70% do seu volume máximo.  Somente um administrador poderá alterar as rotas.<br>
 
-
 #
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
@@ -67,65 +66,78 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 <b>CIDADAO</b>: tabela que armazena as informações relativas ao cidadão.
 - cod_cidadao: Identifica um cidadão específico.
 - nome: nome do cidadão.
-- email: e-mail do cidadão.
-- senha: contém a senha de login do cidadão.
+- email: e-mail de login do cidadão.
+- senha: senha criptografada de login do cidadão.
 - longitude: contém a longitude do atual do cidadão.
 - latitude: contém a latitude atual do cidadão.
 <br>
 
 <b>DESCARTE</b>: tabela que descreve a operação de descarte entre cidadão e lixeira.
-- cod_lixeira: identifica uma lixeira específica.
-- cod_cidadão: identifica um cidadão.
 - volume: volume de lixo descartado por um cidadão.
 - data_descarte: dia, mês e ano da operação de descarte.
 - hora_descarte: horário da operação de descarte.
 <br>
 
-<b>LIXEIRA</b>: tabela que descreve as informações relativas às lixeiras. 	
+<b>LIXEIRA</b>: tabela que descreve as informações sobre as lixeiras. 	
 - cod_lixeira: identifica uma lixeira específica.
-- cod_bairro: identifica o bairro.
 - longitude: contém a longitude da lixeira.
 - latitude: contém a latitude da lixeira.
 - capacidade: volume máximo suportado.
-- nivel_atual: valor em porcentagem referente ao volume atual de lixo contido na lixeira.
 <br>
 
-<b>BAIRRO</b>: tabela que descreve as informações relativas aos bairros.
+<b>BAIRRO</b>: tabela que descreve as informações sobre os bairros.
 - cod_bairro: identifica um bairro específico.
 - nome: nome da bairro.
 <br>
 
-<b>SITUACAO_OPERACIONAL</b>: tabela que descreve a situação operacional de lixeiras.
-- cod_lixeira: identifica uma lixeira específica.
-- cod_coletor: identifica um coletor específico.
-- cod_status: identifica um status específico.
+<b>SITUACAO_OPERACIONAL</b>: tabela que descreve a situação operacional das lixeiras.
 - data_status: dia mês e ano do registro em SITUACAO_OPERACIONAL.
 - hora_status: horário do registro em SITUACAO_OPERACIONAL.
 <br>
 
 <b>STATUS</b>: tabela que descreve as informações de status.
 - cod_status: identifica um status específico.
-- descrição: descreve o significado do status.
+- descrição: descreve uma situção da lixeira.
 <br>
 
-<b>COLETA</b>: tabela que descreve as operação entre coletor e lixeira.	
-- cod_lixeira: identifica uma lixeira específica.
-- cod_coletor: identifica um coletor específico.
-- volume: volume de lixo recolhido pelo coletor.
+<b>COLETA</b>: tabela que descreve as operação entre caminhão coletor e a lixeira.	
+- cod_coleta: identifica um registro de coleta.
+- volume: volume de lixo recolhido da lixeira.
 - data_coleta: dia, mês e ano da operação de coleta.
 - hora_coleta: horário da operação de coleta.
 <br>
 
-<b>COLETOR</b>: tabela que descreve as informações do coletor.	
-- cod_coletor: identifica um coletor específico.
-- longitude: longitude atual do coletor.
-- latitude: latitude atual do coletor.
-- placa: placa do caminhão do coletor.
-- marca: marca do caminhão do coletor.
-- modelo: modelo do caminhão do coletor.
-- ano: ano do caminhão do coletor.
+<b>CAMINHAO</b>: tabela que descreve as informações do caminhão coletor.	
+- cod_caminhao: identifica um caminhao específico.
+- cod_modelo: referencia um modelo específico.
+- longitude: longitude atual do caminhão.
+- latitude: latitude atual do caminhão.
+- placa: placa do caminhão.
 - capacidade: volume máximo suportado pelo caminhão do coletor.
+<br>
 
+<b>MODELO</b>: tabela que descreve as informações do modelo do caminhão.	
+- cod_coletor: identifica um modelo específico.
+- nome: nome do modelo de caminhão.
+- ano: ano de lançamento daquele modelo.
+<br>
+
+<b>MARCA</b>: tabela que descreve as informações da marca associada ao fabricante.	
+- cod_marca: identifica uma marca específico.
+- nome: nome da marca.
+<br>
+
+<b>ALOCA</b>: tabela que descreve as informações sobre alocação de caminhão.	
+- data_alocacao: data que ocorreu a alocação.
+- hora_inic: hora inicial que o caminhão é alocado.
+- hota_fim: hora prevista para a devolução do caminhão.
+<br>
+
+<b>MOTORISTA</b>: tabela que descreve as informações sobre o motorista.	
+- cod_motorista: identifica um motorista específico.
+- nome: nome do motorista.
+- cnh: número da Carteira Nacional de Habilitação do motorista.
+<br>
 
 #
 ### 6	MODELO LÓGICO<br>
@@ -148,19 +160,19 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 8.4 PRINCIPAIS FLUXOS DE INFORMAÇÃO E PRINCIPAIS TABELAS DO SISTEMA
 ##### Os principais fluxos de dados de informação no sistema em desenvolvimento
-- Descarte (Porcentagem de lixo descartados nas lixeiras, alimentada pelos cidadadãos)
-- Coleta (Porcentagem de lixo coletados nas lixeiras, alimentada pelos coletores)
-- Situacao_Operacional (Status operacional das lixeiras, alimentada pelos coletores)
-- Lixeira (Porcentagem de lixo atual na lixeira, alimentada pela porcentagem de lixo no descarte e na coleta)
+- Descarte (Volume de lixo descartados nas lixeiras, envolve os cidadãos e as lixeiras)
+- Coleta (Volume de lixo coletados nas lixeiras, envolve os caminhãos e as lixeiras)
+- Situacao_Operacional (Status operacional das lixeiras, envolve a coleta e os status das lixeiras)
+- Aloca (Registro alocação dos caminhãos pelos coletores, envolve os motoristas e os caminhãos)
 ##### As tabelas que conterão mais dados no sistema em desenvolvimento
 - Descarte 
-- Coleta 
-- Cidadao 
+- Coleta
+- Cidadao
 ##### As 5 principais tabelas do sistema em desenvolvimento
 - Descarte 
 - Coleta 
 - Cidadao 
-- Coletor
+- Caminhao
 - Lixeira
 
 #
