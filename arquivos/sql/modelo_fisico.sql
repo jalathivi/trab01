@@ -4,8 +4,8 @@ CREATE TABLE CIDADAO (
     nome VARCHAR(100),
     senha VARCHAR(100),
     email VARCHAR(100) UNIQUE,
-    latitude DOUBLE,
-    longitude DOUBLE,
+    latitude FLOAT,
+    longitude FLOAT,
     CONSTRAINT pk_cidadao PRIMARY KEY(cod_cidadao)
 );
 
@@ -35,9 +35,9 @@ CREATE TABLE CAMINHAO (
     cod_caminhao INTEGER,
     cod_modelo INTEGER,
     placa VARCHAR(7) UNIQUE,
-    capacidade DOUBLE,
-    latitude DOUBLE,
-    longitude DOUBLE,
+    capacidade FLOAT,
+    latitude FLOAT,
+    longitude FLOAT,
     CONSTRAINT pk_caminhao PRIMARY KEY(cod_caminhao)
 );
 
@@ -60,16 +60,16 @@ CREATE TABLE BAIRRO (
 CREATE TABLE LIXEIRA (
     cod_lixeira INTEGER ,
     cod_bairro INTEGER,
-    capacidade DOUBLE,
-    latitude DOUBLE,
-    longitude DOUBLE,
+    capacidade FLOAT,
+    latitude FLOAT,
+    longitude FLOAT,
     CONSTRAINT pk_lixeira PRIMARY KEY(cod_lixeira),
     CONSTRAINT fk_bairro_lixeira FOREIGN KEY (cod_bairro) REFERENCES BAIRRO (cod_bairro)
 );
 
 CREATE TABLE STATUS (
     cod_status INTEGER,
-    descricao VARCHAR(100) UNIQUE
+    descricao VARCHAR(100) UNIQUE,
     CONSTRAINT pk_status PRIMARY KEY(cod_status)
 );
 
@@ -80,7 +80,7 @@ CREATE TABLE COLETA (
     cod_caminhao INTEGER,
     data_coleta DATE,
     hora_coleta TIME,
-    volume DOUBLE,
+    volume FLOAT,
     CONSTRAINT pk_coleta PRIMARY KEY(cod_coleta),
     CONSTRAINT fk_caminhao_coleta FOREIGN KEY (cod_caminhao) REFERENCES CAMINHAO (cod_caminhao),
     CONSTRAINT fk_lixeira_coleta FOREIGN KEY (cod_lixeira) REFERENCES LIXEIRA (cod_lixeira)
@@ -91,7 +91,7 @@ CREATE TABLE DESCARTE (
     cod_cidadao INTEGER,
     data_descarte DATE,
     hora_descarte TIME,
-    volume DOUBLE,
+    volume FLOAT,
     CONSTRAINT fk_cidadao_descarte FOREIGN KEY (cod_cidadao) REFERENCES CIDADAO (cod_cidadao),
     CONSTRAINT fk_lixeira_descarte FOREIGN KEY (cod_lixeira) REFERENCES LIXEIRA (cod_lixeira)
 );
