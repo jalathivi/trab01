@@ -178,6 +178,21 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+    SELECT*FROM ALOCA;
+![](images/Consultas/9.1/aloca.PNG)<br><br>
+
+    SELECT*FROM CAMINHAO;
+![](images/Consultas/9.1/caminhao.PNG)<br><br>
+
+    SELECT*FROM MARCA;
+![](images/Consultas/9.1/marca.PNG)<br><br>
+
+    SELECT*FROM MODELO;
+![](images/Consultas/9.1/modelo.PNG)<br><br>
+
+    SELECT*FROM MOTORISTA;
+![](images/Consultas/9.1/motorista.PNG)<br><br>
+
     SELECT*FROM BAIRRO;
 ![](images/Consultas/9.1/bairro.PNG)<br><br>
 
@@ -186,9 +201,6 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
     SELECT*FROM COLETA;
 ![](images/Consultas/9.1/coleta.PNG)<br><br>
-
-    SELECT*FROM COLETOR;
-![](images/Consultas/9.1/coletor.PNG)<br><br>
 
     SELECT*FROM DESCARTE;
 ![](images/Consultas/9.1/descarte.PNG)<br><br>
