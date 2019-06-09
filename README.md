@@ -240,35 +240,34 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     SELECT * FROM coleta WHERE volume < 50 AND data_coleta = '2019-03-27';
 ![](images/Consultas/9.3/img1.png)<br><br>
 
-	SELECT * FROM lixeira WHERE capacidade > 200 AND NOT nivel_atual = 0;
+	SELECT * FROM lixeira WHERE capacidade > 200 AND NOT cod_bairro = 3;
 ![](images/Consultas/9.3/img2.png)<br><br>
 
 	SELECT * FROM situacao_operacional WHERE cod_status = 1 OR cod_status = 2;
 ![](images/Consultas/9.3/img3.png)<br><br>
 
-	SELECT * FROM coletor WHERE marca = 'Volvo' OR ano = 2019;
+	SELECT * FROM caminhao WHERE cod_modelo = 2 OR capacidade >= 11000;
 ![](images/Consultas/9.3/img4.png)<br><br>
 	
-	SELECT * FROM descarte WHERE NOT data_descarte = '2019-03-27';
+	SELECT * FROM descarte WHERE NOT data_descarte = '2019-03-27' AND cod_cidadao = 1;
 ![](images/Consultas/9.3/img5.png)<br><br>
 
-	SELECT capacidade, nivel_atual, capacidade - ((capacidade * nivel_atual)/100) AS capacidade_disponivel
-	FROM lixeira WHERE NOT (capacidade - ((capacidade * nivel_atual)/100) ) < 0;
+	SELECT * FROM modelo where ano > 2010 AND NOT cod_marca = 1;
 ![](images/Consultas/9.3/img6.png)<br><br>
 
-	SELECT capacidade, (capacidade * nivel_atual)/100 AS volume_preenchido FROM lixeira;
+	SELECT cod_cidadao, volume as volume_descartado FROM descarte WHERE volume >100;
 ![](images/Consultas/9.3/img7.png)<br><br>
 
-	SELECT capacidade, (capacidade*70)/100 capacidade_70p FROM lixeira;
+	SELECT cod_caminhao,volume as volume_coletado, cod_lixeira FROM coleta where volume < 100;
 ![](images/Consultas/9.3/img8.png)<br><br>
 
-	SELECT cod_Lixeira as codigo_Lixeiras_Quebradas FROM situacao_operacional WHERE cod_status = 1;	
+	SELECT cod_coleta as cod_coleta_lixeira_quebrada FROM situacao_operacional WHERE cod_status = 1;
 ![](images/Consultas/9.3/img9.png)<br><br>
 
-	SELECT cod_Lixeira as codigo_Lixeiras_Cheias FROM lixeira WHERE nivel_atual >= 70;	
+	SELECT cod_Lixeira as codigo_Lixeiras_potencialmente_Cheias FROM descarte WHERE volume >= 90;	
 ![](images/Consultas/9.3/img10.png)<br><br>
 
-	SELECT cod_Lixeira as codigo_Lixeiras_Ok FROM situacao_operacional WHERE cod_status = 3;	
+	SELECT cod_coleta as codigo_coleta_Lixeira_Transbordando FROM situacao_operacional WHERE cod_status = 2;	
 ![](images/Consultas/9.3/img11.png)<br><br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
