@@ -460,9 +460,17 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 
-	CREATE VIEW lixeiraComLixo AS SELECT descarte.cod_lixeira, SUM(descarte.volume) AS volume FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
+	CREATE VIEW lixeiraComLixo AS SELECT descarte.cod_lixeira, SUM(descarte.volume) AS volume 
+	FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
 	WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira ORDER BY descarte.cod_lixeira
 ![](/images/Consultas/9.9/img1.png)<br><br>
+
+
+	CREATE VIEW lixeiraVazia AS SELECT lixeira.cod_lixeira 
+	FROM lixeira WHERE cod_lixeira 
+	NOT IN (SELECT descarte.cod_lixeira FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
+	WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira ORDER BY descarte.cod_lixeira)
+![](/images/Consultas/9.9/img2.png)<br><br>
         
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
@@ -471,8 +479,9 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	WHERE nome IN (SELECT DISTINCT nome FROM modelo WHERE nome <> 'VW 8150')
 ![](/images/Consultas/9.10/img1.png)<br><br>
 
-	SELECT lixeira.cod_lixeira as codigo, lixeira.nivel_atual 
-	FROM lixeira WHERE nivel_atual > (SELECT AVG(nivel_atual) FROM lixeira)
+	SELECT lixeira.cod_lixeira FROM lixeira WHERE cod_lixeira 
+	NOT IN (SELECT descarte.cod_lixeira FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
+	WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira ORDER BY descarte.cod_lixeira)
 ![](/images/Consultas/9.10/img2.PNG)<br><br>
 
 	SELECT lixeira.cod_lixeira, lixeira.nivel_atual 
