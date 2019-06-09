@@ -217,10 +217,10 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
     SELECT * FROM lixeira WHERE capacidade > 120;
-![](images/Consultas/9.2/lixeira_capacidade.png)<br><br>
+![](images/Consultas/9.2/lixeira_capacidade.PNG)<br><br>
 
     SELECT * FROM cidadao WHERE email = 'maria_lu@gmail.com';
-![](images/Consultas/9.2/cidadao_email.png)<br><br>
+![](images/Consultas/9.2/cidadao_email.PNG)<br><br>
 
     SELECT * FROM bairro WHERE cod_bairro = '4';
 ![](images/Consultas/9.2/where_codbairro.png)<br><br>
