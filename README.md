@@ -467,9 +467,9 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
 
-	SELECT DISTINCT coletor.modelo as modelo_de_caminhao 
-	FROM coletor WHERE modelo IN (SELECT DISTINCT coletor.modelo FROM coletor WHERE modelo <> 'VEGALIX')
-![](/images/Consultas/9.10/img1.PNG)<br><br>
+	SELECT DISTINCT nome as modelo_de_caminhao FROM modelo 
+	WHERE nome IN (SELECT DISTINCT nome FROM modelo WHERE nome <> 'VW 8150')
+![](/images/Consultas/9.10/img1.png)<br><br>
 
 	SELECT lixeira.cod_lixeira as codigo, lixeira.nivel_atual 
 	FROM lixeira WHERE nivel_atual > (SELECT AVG(nivel_atual) FROM lixeira)
