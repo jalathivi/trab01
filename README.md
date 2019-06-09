@@ -457,6 +457,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+          
+	CREATE VIEW lixeiraComLixo AS SELECT descarte.cod_lixeira, SUM(descarte.volume) AS volume FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
+	WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira ORDER BY descarte.cod_lixeira
+![](/images/Consultas/9.9/img1.PNG)<br><br>
+        
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
 
