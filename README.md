@@ -272,45 +272,45 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     SELECT*FROM bairro WHERE nome ILIKE '%jardim%';
-![](images/Consultas/9.4/bairro_ComJardim.PNG)<br><br>
+![](images/Consultas/9.4/1.PNG)<br><br>
 
     SELECT*FROM cidadao WHERE nome LIKE 'L%';
-![](images/Consultas/9.4/nomeComL.PNG)<br><br>
+![](images/Consultas/9.4/2.PNG)<br><br>
 
     SELECT*FROM coletor WHERE placa LIKE '_T%';
-![](images/Consultas/9.4/coletor_SegundaLetraT.PNG)<br><br>
+![](images/Consultas/9.4/3.PNG)<br><br>
 
-    SELECT*FROM coletor WHERE marca ILIKE 'MERCEDES BENZ';
-![](images/Consultas/9.4/coletor_MarcaMercedes.PNG)<br><br>
+    SELECT * FROM marca WHERE nome ILIKE 'MERCEDES BENZ';
+![](images/Consultas/9.4/4.PNG)<br><br>
 
-    SELECT*FROM coletor WHERE modelo LIKE 'COLECOM';
- ![](images/Consultas/9.4/coletor_ModeloColetom.PNG)<br><br>
+    SELECT*FROM motorista WHERE nome ILIKE '%b%';
+ ![](images/Consultas/9.4/5.PNG)<br><br>
  
     b) Criar uma consulta para cada tipo de função data apresentada.
     
     SELECT*FROM coleta WHERE CURRENT_DATE - data_coleta > 47;
-![](images/Consultas/9.4/coleta_47diasDepois.PNG)<br><br>
+![](images/Consultas/9.4/6.PNG)<br><br>
     
-    SELECT cod_coletor,cod_lixeira, age(data_coleta,'2019-03-01')AS intervalo_2019_03_01 FROM coleta; 
-![](images/Consultas/9.4/coleta_Intervalo.PNG)<br><br>
+    SELECT cod_caminhao, cod_lixeira, age(data_coleta,'2019-03-01')AS intervalo_2019_03_01 FROM coleta limit 5;
+![](images/Consultas/9.4/7.PNG)<br><br>
     
-    SELECT cod_cidadao, cod_lixeira, date_part('hour',hora_descarte) AS hora FROM descarte;
-![](images/Consultas/9.4/descarte_SomenteAsHoras.PNG)<br><br>
+    SELECT cod_cidadao, cod_lixeira, date_part('hour',hora_descarte) AS hora FROM descarte limit 5; 
+![](images/Consultas/9.4/8.PNG)<br><br>
     
-    SELECT cod_cidadao, cod_lixeira, date_part('minute',hora_descarte) AS minutos FROM descarte;
-![](images/Consultas/9.4/descarte_SomenteOsMinutos.PNG)<br><br>
+    SELECT cod_cidadao, cod_lixeira, date_part('minute',hora_descarte) AS minutos FROM descarte limit 5;
+![](images/Consultas/9.4/9.PNG)<br><br>
     
-    SELECT cod_cidadao, cod_lixeira, EXTRACT('year' FROM data_descarte) AS AnoDescarte FROM descarte;
-![](images/Consultas/9.4/descarte_AnoDescarte.PNG)<br><br>
+    SELECT cod_caminhao, cod_lixeira, EXTRACT('year' FROM data_coleta) AS Anocoleta FROM coleta limit 5;
+![](images/Consultas/9.4/10.PNG)<br><br>
     
-    SELECT cod_cidadao, cod_lixeira, EXTRACT('month' FROM data_descarte) AS mesDescarte FROM descarte;
-![](images/Consultas/9.4/descarte_MesDescarte.PNG)<br><br>
+    SELECT cod_cidadao, cod_lixeira, EXTRACT('month' FROM data_descarte) AS mesDescarte FROM descarte limit 5;
+![](images/Consultas/9.4/11.PNG)<br><br>
     
-    SELECT cod_cidadao, cod_lixeira, EXTRACT('day' FROM data_descarte) AS diaDescarte FROM descarte;
-![](images/Consultas/9.4/descarte_DiaDescarte.PNG)<br><br>
+   SELECT cod_cidadao, cod_lixeira, EXTRACT('day' FROM data_descarte) AS diaDescarte FROM descarte limit 5;
+![](images/Consultas/9.4/12.PNG)<br><br>
     
-    SELECT*, age('2020-01-01',data_status) as manutencao_obrigatoria from situacao_operacional;
-![](images/Consultas/9.4/situacao_operacional_ManutencaoObrigatoria.PNG)<br><br>
+    SELECT*, age('2020-01-01',data_coleta) as manutencao_obrigatoria from coleta limit 5;
+![](images/Consultas/9.4/13.PNG)<br><br>
 
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
