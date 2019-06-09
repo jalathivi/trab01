@@ -202,9 +202,6 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
     SELECT*FROM COLETA;
 ![](images/Consultas/9.1/coleta.PNG)<br><br>
 
-    SELECT*FROM COLETOR;
-![](images/Consultas/9.1/coletor.PNG)<br><br>
-
     SELECT*FROM DESCARTE;
 ![](images/Consultas/9.1/descarte.PNG)<br><br>
 
