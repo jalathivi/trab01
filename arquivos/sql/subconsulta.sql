@@ -6,5 +6,6 @@ SELECT lixeira.cod_lixeira FROM lixeira WHERE cod_lixeira
 NOT IN (SELECT descarte.cod_lixeira FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
 WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira ORDER BY descarte.cod_lixeira)
 
-/* Código das lixeiras que possuem o maior nível de lixo*/
-select lixeira.cod_lixeira, lixeira.nivel_atual from lixeira inner join bairro on (lixeira.cod_bairro = bairro.cod_bairro) where lixeira.nivel_atual = (select max(lixeira.nivel_atual) from lixeira ) 
+/* Código e volume das lixeiras coletadas */
+
+SELECT coleta.cod_lixeira, coleta.volume  FROM coleta WHERE coleta.data_coleta IN (SELECT DISTINCT coleta.data_coleta FROM coleta  ORDER BY coleta.data_coleta DESC LIMIT 1) 
