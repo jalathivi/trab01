@@ -337,7 +337,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
-	SELECT  
+		SELECT  
 		Bairro.nome as Bairro,
 		cidadao.nome as Cidadao, 
 		coleta.nivel as nivel_atual, 
