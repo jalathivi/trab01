@@ -468,6 +468,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+	Thiago Fazendo
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
