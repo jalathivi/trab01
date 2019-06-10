@@ -29,11 +29,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
-- Relatório do volume atual das lixeiras que informe: código da lixeira, data e hora  da última atualização, seu volume anterior e o atual;
-- Relatório das lixeiras próximas disponíveis para descarte que informe: coordenadas e códigos das lixeiras próximas;  
-- Relatório das lixeiras que atingiram nível igual ou superior a 70% da capacidade máxima que informe: código e nível de preenchimento das lixeiras;
-- Relatório da rota otimizada para o motorista que informe a rota e o seu tempo médio estimado;
-- Relatório da situação operante das lixeiras que informe: status operacionais das lixeiras, por exemplo: "Quebrada".
+- Relatório da quantidade de lixo coletado em cada bairro, em determinada rota.
+- Relatório de uso da lixeira: quantidade de descartes que recebeu e o volume total descartado na mesma.
+- Relatório de uso dos caminhões: contagem da frequência de alocação de cada veículo de coleta.
+- Relatório da situação operacional das lixeiras que informe status das lixeiras e quantas lixeiras se encontram naquela situação.
+- Relatório de listagem das lixeiras quebradas, informando seus dados para uma futura manutenção.
 
  
  
