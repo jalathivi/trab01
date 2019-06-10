@@ -337,8 +337,9 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
+	
 	SELECT  
-		Bairro.nome as Bairro,
+		bairro.nome as Bairro,
 		cidadao.nome as Cidadao, 
 		coleta.volume, 
 		caminhao.placa, 
@@ -353,7 +354,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	INNER JOIN CIDADAO ON (CIDADAO.COD_CIDADAO = DESCARTE.COD_CIDADAO)
 	INNER JOIN CAMINHAO ON (CAMINHAO.COD_CAMINHAO = COLETA.COD_CAMINHAO)
 	INNER JOIN SITUACAO_OPERACIONAL ON (SITUACAO_OPERACIONAL.COD_COLETA = COLETA.COD_COLETA)
-	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.COD_STATUS = STATUS.COD_STATUS);
+	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.COD_STATUS = STATUS.COD_STATUS)
+	ORDER BY bairro.nome;
 ![](/images/Consultas/9.6/1.PNG)<br><br>
 
 
@@ -365,7 +367,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	FROM LIXEIRA 
 	INNER JOIN COLETA ON (LIXEIRA.cod_lixeira = COLETA.cod_coleta)
 	INNER JOIN SITUACAO_OPERACIONAL ON (COLETA.cod_coleta = SITUACAO_OPERACIONAL.cod_coleta)
-	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.cod_status = STATUS.cod_status);
+	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.cod_status = STATUS.cod_status)
+	ORDER BY lixeira.cod_lixeira, data_coleta;
 ![](/images/Consultas/9.6/2.PNG)<br><br>	
 
 
@@ -376,7 +379,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		longitude
 	FROM LIXEIRA 
 	INNER JOIN BAIRRO ON (LIXEIRA.cod_bairro = BAIRRO.cod_bairro) 
-	LIMIT 10;
+	ORDER BY lixeira.cod_lixeira LIMIT 10;
 ![](/images/Consultas/9.6/3.PNG)<br><br>
 
 
@@ -389,8 +392,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		hora_descarte
 	FROM CIDADAO 
 	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
-	LIMIT 10
-	OFFSET 11;
+	ORDER BY cidadao.cod_cidadao 
+	LIMIT 10 OFFSET 11;
 ![](/images/Consultas/9.6/4.PNG)<br><br>
 
 
@@ -406,6 +409,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	FROM CIDADAO 
 	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
 	INNER JOIN LIXEIRA ON (DESCARTE.cod_lixeira = LIXEIRA.cod_lixeira)
+	ORDER BY cidadao.cod_cidadao
 	LIMIT 10;
 ![](/images/Consultas/9.6/5.PNG)<br><br>
 
@@ -419,6 +423,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		hora_coleta
 	FROM CAMINHAO 
 	INNER JOIN COLETA ON (CAMINHAO.cod_caminhao = COLETA.cod_caminhao)
+	ORDER BY caminhao.cod_caminhao, caminhao.placa
 	LIMIT 10;
 ![](/images/Consultas/9.6/6.PNG)<br><br>
 
@@ -433,7 +438,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		lixeira.longitude
 	FROM CAMINHAO 
 	INNER JOIN COLETA ON (CAMINHAO.cod_caminhao = COLETA.cod_caminhao)
-	INNER JOIN LIXEIRA ON (COLETA.cod_lixeira = LIXEIRA.cod_lixeira);
+	INNER JOIN LIXEIRA ON (COLETA.cod_lixeira = LIXEIRA.cod_lixeira)
+	ORDER BY caminhao.cod_caminhao;
 ![](/images/Consultas/9.6/7.PNG)<br><br>
 
         
