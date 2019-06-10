@@ -555,11 +555,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	WHERE coleta.data_coleta IN (SELECT DISTINCT coleta.data_coleta FROM coleta ORDER BY coleta.data_coleta DESC LIMIT 1) 
 ![](/images/Consultas/9.10/img3.PNG)<br><br>
 
-
->## Marco de Entrega 03 em: (27/05/2019)<br>
-
 #### 9.11 Relatórios e Gráficos 
-[Relatórios usando o Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorios.ipynb)<br>
+[Relatórios usando Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorios.ipynb)<br>
 
 
 #
