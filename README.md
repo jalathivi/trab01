@@ -338,20 +338,20 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
 		SELECT  
-		Bairro.nome as Bairro,
-		cidadao.nome as Cidadao, 
-		coleta.nivel as nivel_atual, 
-		coletor.placa, 
-		descarte.data_descarte,
-		lixeira.cod_lixeira,
-		situacao_operacional.data_status,
-		status.descricao
+		Bairro.nome as Bairro_da_Lixeira,
+		cidadao.nome as Ultimo_Cidadao_Descartante, 
+		coleta.volume as Volume_Total_Coletado, 
+		caminhao.placa as Caminhao_Coletor, 
+		descarte.data_descarte as Data_Descarte,
+		lixeira.cod_lixeira as Lixeira_Coletada,
+		situacao_operacional.cod_status as Cod_Status,
+		status.descricao as Status
 	FROM LIXEIRA INNER JOIN COLETA ON (LIXEIRA.COD_lixeira = coleta.COD_lixeira) 
 	INNER JOIN BAIRRO ON (LIXEIRA.COD_BAIRRO = BAIRRO.COD_BAIRRO)
 	INNER JOIN DESCARTE ON (LIXEIRA.COD_LIXEIRA = DESCARTE.COD_LIXEIRA)
 	INNER JOIN CIDADAO ON (CIDADAO.COD_CIDADAO = DESCARTE.COD_CIDADAO)
-	INNER JOIN COLETOR ON (COLETOR.COD_COLETOR = COLETA.COD_COLETOR)
-	INNER JOIN SITUACAO_OPERACIONAL ON (SITUACAO_OPERACIONAL.COD_LIXEIRA = LIXEIRA.COD_LIXEIRA)
+	INNER JOIN CAMINHAO ON (CAMINHAO.COD_CAMINHAO = COLETA.COD_CAMINHAO)
+	INNER JOIN SITUACAO_OPERACIONAL ON (SITUACAO_OPERACIONAL.COD_COLETA = COLETA.COD_COLETA)
 	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.COD_STATUS = STATUS.COD_STATUS);
 
 ![](/images/Consultas/9.6/join_all_tables.PNG)<br><br>
