@@ -284,7 +284,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](images/Consultas/9.4/4.PNG)<br><br>
 
     SELECT*FROM motorista WHERE nome ILIKE '%b%';
- ![](images/Consultas/9.4/5.PNG)<br><br>
+![](images/Consultas/9.4/5.PNG)<br><br>
  
     b) Criar uma consulta para cada tipo de função data apresentada.
     
@@ -317,23 +317,23 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 >## Marco de Entrega 07 em: (20/05/2019)<br>
 
-    UPDATE BAIRRO SET nome = 'Jardim Limoeiro' WHERE cod_bairro = 8;
-![](images/Consultas/9.5/bairro_update.PNG)<br><br>
+    UPDATE BAIRRO SET nome = 'Jardim Limoeiro' WHERE cod_bairro = 6;
+![](images/Consultas/9.5/set_nomebairro.PNG)<br><br>
 
     UPDATE CIDADAO SET latitude = -40.2172186 WHERE nome LIKE 'L%';
- ![](images/Consultas/9.5/cidadao_update.PNG)<br><br>   
+![](images/Consultas/9.5/set_latitudecidadao.PNG)<br><br>   
 
     UPDATE COLETA SET volume = volume*1.1;
-![](images/Consultas/9.5/coleta_update.PNG)<br><br>    
+![](images/Consultas/9.5/set_volumecoleta.PNG)<br><br>    
 
-    DELETE FROM DESCARTE WHERE volume <= 100;
-![](images/Consultas/9.5/descarte_delete.PNG)<br><br>    
+    DELETE FROM DESCARTE WHERE volume <=100;
+![](images/Consultas/9.5/delete_descarte.PNG)<br><br>    
 
-    DELETE FROM SITUACAO_OPERACIONAL WHERE hora_status < '14:00:00';
- ![](images/Consultas/9.5/situacao_delete.PNG)<br><br>   
+    DELETE FROM COLETA WHERE cod_caminhao = 1;
+![](images/Consultas/9.5/delete_coleta.PNG)<br><br>   
 
-    DELETE FROM COLETA WHERE data_coleta >'2019-03-26';
-![](images/Consultas/9.5/coleta_delete.PNG)<br><br>
+    DELETE FROM MOTORISTA WHERE cnh = '79422697522'; 
+![](images/Consultas/9.5/delete_motorista.PNG)<br><br>
 
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
