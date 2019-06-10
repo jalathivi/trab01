@@ -527,7 +527,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 	WHERE descarte.data_descarte > coleta.data_coleta GROUP BY descarte.cod_lixeira, lixeira.capacidade, bairro.nome
 	HAVING SUM(descarte.volume) > (lixeira.capacidade * 0.7)
 	ORDER BY descarte.cod_lixeira
-	![](/images/Consultas/9.9/img6.png)<br><br>
+![](/images/Consultas/9.9/img6.png)<br><br>
 			
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
