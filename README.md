@@ -484,7 +484,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 	CREATE VIEW lixeiraColetadas AS SELECT coleta.cod_lixeira, coleta.volume FROM coleta 
 	WHERE coleta.data_coleta IN (SELECT DISTINCT coleta.data_coleta FROM coleta  ORDER BY coleta.data_coleta DESC LIMIT 1) 
+
 ![](/images/Consultas/9.9/img3.PNG)<br><br>
+
+	Jackson Fazendo
+
         
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 
