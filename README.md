@@ -559,7 +559,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 >## Marco de Entrega 03 em: (27/05/2019)<br>
 
 #### 9.11 Relatórios e Gráficos 
-    a)análises e resultados provenientes do banco de dados
+[Relatórios usando o Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorios.ipynb)<br>
 
 
 #
