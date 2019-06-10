@@ -388,7 +388,9 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		data_descarte,
 		hora_descarte
 	FROM CIDADAO 
-	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao);
+	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
+	LIMIT 10
+	OFFSET 11;
 ![](/images/Consultas/9.6/4.PNG)<br><br>
 
 
@@ -403,7 +405,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		lixeira.longitude as lixeira_longitude
 	FROM CIDADAO 
 	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
-	INNER JOIN LIXEIRA ON (DESCARTE.cod_lixeira = LIXEIRA.cod_lixeira);
+	INNER JOIN LIXEIRA ON (DESCARTE.cod_lixeira = LIXEIRA.cod_lixeira)
+	LIMIT 10;
 ![](/images/Consultas/9.6/5.PNG)<br><br>
 
 
@@ -415,7 +418,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		data_coleta,
 		hora_coleta
 	FROM CAMINHAO 
-	INNER JOIN COLETA ON (CAMINHAO.cod_caminhao = COLETA.cod_caminhao);
+	INNER JOIN COLETA ON (CAMINHAO.cod_caminhao = COLETA.cod_caminhao)
+	LIMIT 10;
 ![](/images/Consultas/9.6/6.PNG)<br><br>
 
 
