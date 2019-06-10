@@ -284,7 +284,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](images/Consultas/9.4/4.PNG)<br><br>
 
     SELECT*FROM motorista WHERE nome ILIKE '%b%';
- ![](images/Consultas/9.4/5.PNG)<br><br>
+![](images/Consultas/9.4/5.PNG)<br><br>
  
     b) Criar uma consulta para cada tipo de função data apresentada.
     
@@ -317,54 +317,56 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 >## Marco de Entrega 07 em: (20/05/2019)<br>
 
-    UPDATE BAIRRO SET nome = 'Jardim Limoeiro' WHERE cod_bairro = 8;
-![](images/Consultas/9.5/bairro_update.PNG)<br><br>
+    UPDATE BAIRRO SET nome = 'Jardim Limoeiro' WHERE cod_bairro = 6;
+![](images/Consultas/9.5/set_nomebairro.PNG)<br><br>
 
     UPDATE CIDADAO SET latitude = -40.2172186 WHERE nome LIKE 'L%';
- ![](images/Consultas/9.5/cidadao_update.PNG)<br><br>   
+![](images/Consultas/9.5/set_latitudecidadao.PNG)<br><br>   
 
     UPDATE COLETA SET volume = volume*1.1;
-![](images/Consultas/9.5/coleta_update.PNG)<br><br>    
+![](images/Consultas/9.5/set_volumecoleta.PNG)<br><br>    
 
-    DELETE FROM DESCARTE WHERE volume <= 100;
-![](images/Consultas/9.5/descarte_delete.PNG)<br><br>    
+    DELETE FROM DESCARTE WHERE volume <=100;
+![](images/Consultas/9.5/delete_descarte.PNG)<br><br>    
 
-    DELETE FROM SITUACAO_OPERACIONAL WHERE hora_status < '14:00:00';
- ![](images/Consultas/9.5/situacao_delete.PNG)<br><br>   
+    DELETE FROM COLETA WHERE cod_caminhao = 1;
+![](images/Consultas/9.5/delete_coleta.PNG)<br><br>   
 
-    DELETE FROM COLETA WHERE data_coleta >'2019-03-26';
-![](images/Consultas/9.5/coleta_delete.PNG)<br><br>
+    DELETE FROM MOTORISTA WHERE cnh = '79422697522'; 
+![](images/Consultas/9.5/delete_motorista.PNG)<br><br>
 
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
 	SELECT  
 		Bairro.nome as Bairro,
 		cidadao.nome as Cidadao, 
-		coleta.nivel as nivel_atual, 
-		coletor.placa, 
+		coleta.volume, 
+		caminhao.placa, 
 		descarte.data_descarte,
 		lixeira.cod_lixeira,
-		situacao_operacional.data_status,
+		situacao_operacional.cod_status,
 		status.descricao
-	FROM LIXEIRA INNER JOIN COLETA ON (LIXEIRA.COD_lixeira = coleta.COD_lixeira) 
+	FROM LIXEIRA 
+	INNER JOIN COLETA ON (LIXEIRA.COD_lixeira = COLETA.COD_lixeira) 
 	INNER JOIN BAIRRO ON (LIXEIRA.COD_BAIRRO = BAIRRO.COD_BAIRRO)
 	INNER JOIN DESCARTE ON (LIXEIRA.COD_LIXEIRA = DESCARTE.COD_LIXEIRA)
 	INNER JOIN CIDADAO ON (CIDADAO.COD_CIDADAO = DESCARTE.COD_CIDADAO)
-	INNER JOIN COLETOR ON (COLETOR.COD_COLETOR = COLETA.COD_COLETOR)
-	INNER JOIN SITUACAO_OPERACIONAL ON (SITUACAO_OPERACIONAL.COD_LIXEIRA = LIXEIRA.COD_LIXEIRA)
+	INNER JOIN CAMINHAO ON (CAMINHAO.COD_CAMINHAO = COLETA.COD_CAMINHAO)
+	INNER JOIN SITUACAO_OPERACIONAL ON (SITUACAO_OPERACIONAL.COD_COLETA = COLETA.COD_COLETA)
 	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.COD_STATUS = STATUS.COD_STATUS);
-
-![](/images/Consultas/9.6/join_all_tables.PNG)<br><br>
+![](/images/Consultas/9.6/1.PNG)<br><br>
 
 
 	SELECT 
-		lixeira.cod_lixeira, 
-		descricao as status_operacional, 
-		data_status, 
-		hora_status
-	FROM LIXEIRA INNER JOIN SITUACAO_OPERACIONAL ON (LIXEIRA.cod_lixeira = SITUACAO_OPERACIONAL.cod_lixeira)
+		lixeira.cod_lixeira,
+		descricao as descricao_status, 
+		data_coleta, 
+		hora_coleta
+	FROM LIXEIRA 
+	INNER JOIN COLETA ON (LIXEIRA.cod_lixeira = COLETA.cod_coleta)
+	INNER JOIN SITUACAO_OPERACIONAL ON (COLETA.cod_coleta = SITUACAO_OPERACIONAL.cod_coleta)
 	INNER JOIN STATUS ON (SITUACAO_OPERACIONAL.cod_status = STATUS.cod_status);
-![](/images/Consultas/9.6/join_status.PNG)<br><br>	
+![](/images/Consultas/9.6/2.PNG)<br><br>	
 
 
 	SELECT 
@@ -372,8 +374,10 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		bairro.nome,
 		latitude,
 		longitude
-	FROM LIXEIRA INNER JOIN BAIRRO ON (LIXEIRA.cod_bairro = BAIRRO.cod_bairro);
-![](/images/Consultas/9.6/join_bairros.PNG)<br><br>
+	FROM LIXEIRA 
+	INNER JOIN BAIRRO ON (LIXEIRA.cod_bairro = BAIRRO.cod_bairro) 
+	LIMIT 10;
+![](/images/Consultas/9.6/3.PNG)<br><br>
 
 
 	SELECT
@@ -383,8 +387,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		volume as volume_descarte,
 		data_descarte,
 		hora_descarte
-	FROM CIDADAO INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao);
-![](/images/Consultas/9.6/join_descarteCidadao.PNG)<br><br>
+	FROM CIDADAO 
+	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
+	LIMIT 10
+	OFFSET 11;
+![](/images/Consultas/9.6/4.PNG)<br><br>
 
 
 	SELECT
@@ -392,40 +399,42 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 		cidadao.latitude as cidadao_latitude,
 		cidadao.longitude as cidadao_longitude,
 		descarte.cod_lixeira,
-		lixeira.nivel_atual,
+		descarte.volume as volume_descarte,
 		lixeira.capacidade,
 		lixeira.latitude as lixeira_latitude,
 		lixeira.longitude as lixeira_longitude
-	FROM CIDADAO INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
-	INNER JOIN LIXEIRA ON (DESCARTE.cod_lixeira = LIXEIRA.cod_lixeira) 
-	WHERE LIXEIRA.nivel_atual <> 100;
-![](/images/Consultas/9.6/join_coordCidadaoLixeira.PNG)<br><br>
+	FROM CIDADAO 
+	INNER JOIN DESCARTE ON (CIDADAO.cod_cidadao = DESCARTE.cod_cidadao)
+	INNER JOIN LIXEIRA ON (DESCARTE.cod_lixeira = LIXEIRA.cod_lixeira)
+	LIMIT 10;
+![](/images/Consultas/9.6/5.PNG)<br><br>
 
 
 	SELECT
-		coletor.cod_coletor,
-		coletor.placa,
+		caminhao.cod_caminhao,
+		caminhao.placa,
 		coleta.cod_lixeira,
 		volume as volume_coleta,
 		data_coleta,
 		hora_coleta
-	FROM COLETOR INNER JOIN COLETA ON (COLETOR.cod_coletor = COLETA.cod_coletor);
-![](/images/Consultas/9.6/join_coletaVeiculo.PNG)<br><br>
+	FROM CAMINHAO 
+	INNER JOIN COLETA ON (CAMINHAO.cod_caminhao = COLETA.cod_caminhao)
+	LIMIT 10;
+![](/images/Consultas/9.6/6.PNG)<br><br>
 
 
 	SELECT
-		coletor.cod_coletor,
-		coletor.latitude,
-		coletor.longitude,
-		coletor.capacidade,
+		caminhao.cod_caminhao,
+		caminhao.latitude,
+		caminhao.longitude,
+		caminhao.capacidade,
 		lixeira.cod_lixeira,
 		lixeira.latitude,
-		lixeira.longitude,
-		lixeira.nivel_atual
-	FROM COLETOR INNER JOIN COLETA ON (coletor.cod_coletor = coleta.cod_coletor)
-	INNER JOIN LIXEIRA ON (coleta.cod_lixeira = lixeira.cod_lixeira)
-	WHERE lixeira.nivel_atual >= 70 ;
-![](/images/Consultas/9.6/join_coordColetorLixeira.PNG)<br><br>
+		lixeira.longitude
+	FROM CAMINHAO 
+	INNER JOIN COLETA ON (CAMINHAO.cod_caminhao = COLETA.cod_caminhao)
+	INNER JOIN LIXEIRA ON (COLETA.cod_lixeira = LIXEIRA.cod_lixeira);
+![](/images/Consultas/9.6/7.PNG)<br><br>
 
         
 >## Marco de Entrega 08 em: (21/05/2019)<br>
