@@ -466,18 +466,40 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](/images/Consultas/9.7/groupby_from_lixeira_capacidades.png)<br><br>
 
 
-	SELECT cod_status, COUNT(*) 
+	SELECT cod_status, COUNT(*)
 	FROM situacao_operacional GROUP BY cod_status;
 ![](/images/Consultas/9.7/groupby_from_SO_status.png)<br><br>
 
 	
-	SELECT cod_coletor, COUNT(*) AS QTD_REGISTROS 
-	FROM situacao_operacional GROUP BY cod_coletor;
+	SELECT cod_cidadao, COUNT(*) AS QTD_DESCARTES 
+	FROM descarte GROUP BY cod_cidadao ORDER BY cod_cidadao;
 ![](images/Consultas/9.7/groupby_from_situacaoop.png)<br><br>
 
 
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
-	Thiago Fazendo
+	
+	
+	SELECT cod_lixeira, bairro.nome, capacidade 
+	FROM bairro RIGHT OUTER JOIN lixeira ON (lixeira.cod_bairro = bairro.cod_bairro);
+![](images/Consultas/9.8/9_8__1_part1.PNG)<br><br>
+
+
+	SELECT marca.nome, modelo.nome, modelo.ano, caminhao.placa, caminhao.capacidade 
+	FROM marca LEFT OUTER JOIN modelo ON (marca.cod_marca = modelo.cod_marca) 
+	LEFT OUTER JOIN caminhao ON (modelo.cod_modelo = caminhao.cod_modelo);
+![](images/Consultas/9.8/9_8__2.PNG)<br><br>
+
+
+	SELECT motorista.nome, aloca.data_alocacao, aloca.hora_inic, aloca.hora_fim, caminhao.placa 
+	FROM motorista RIGHT OUTER JOIN aloca ON (motorista.cod_motorista = aloca.cod_motorista) 
+	LEFT OUTER JOIN caminhao ON (aloca.cod_caminhao = caminhao.cod_caminhao) ORDER BY nome;
+![](images/Consultas/9.8/9_8__3.PNG)<br><br>
+
+
+	SELECT situacao_operacional.cod_status, status.descricao 
+	FROM situacao_operacional RIGHT OUTER JOIN status ON (situacao_operacional.cod_status = status.cod_status);
+![](images/Consultas/9.8/9_8__4.PNG)<br><br>
+
 
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
