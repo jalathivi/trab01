@@ -580,32 +580,35 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #### 9.11 Relatórios e Gráficos 
 [Relatórios usando Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorios.ipynb)<br>
 
+>## Marco de Entrega 11 em: (04/06/2019)<br>
 
-#
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
+#### a) Pontos Chave do MINI-MUNDO
+#### b) 5 principais tabelas/fluxos do sistema
+#### c) Perguntas que podem ser respondidads com o sistema proposto
+#### d) Modelo Conceitual
+#### e) Modelo Lógico
+#### f) Relatórios e Gráficos mais importantes para o sistema (mínimo 5) 
+#### --> Tempo de apresentação 10 minutos
 
 
 
-#
+
 ### 11 Backup completo do banco de dados postgres 
     a) deve ser realizado no formato "backup" 
         (Em Dump Options #1 Habilitar opções Don't Save Owner e Privilege)
     b) antes de postar o arquivo no git o mesmo deve ser testado/restaurado por outro grupo de alunos/dupla
     c) informar aqui o grupo de alunos/dupla que realizou o teste.
 
-#
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
         a) Outros grupos deverão ser capazes de restaurar o banco 
         b) executar todas as consultas presentes no trabalho
         c) executar códigos que tenham sido construídos para o trabalho 
         d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
         
-#
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
->## Marco de Entrega Final em: (17/06/2019)<br>
+>## Marco de Entrega Final em: 11/06/2019 <br>
         
-
-#
 ### 14  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
     
@@ -644,5 +647,6 @@ http://www.sis4.com/brModelo/download.html
 
 Link para curso de GIT<br>
 ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
+
 
 
