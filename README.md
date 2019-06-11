@@ -594,11 +594,11 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 
 
-### 11 Backup completo do banco de dados postgres 
-    a) deve ser realizado no formato "backup" 
-        (Em Dump Options #1 Habilitar opções Don't Save Owner e Privilege)
-    b) antes de postar o arquivo no git o mesmo deve ser testado/restaurado por outro grupo de alunos/dupla
-    c) informar aqui o grupo de alunos/dupla que realizou o teste.
+### 11 Backup completo do banco de dados postgres
+	
+[ColetaInteligente.backup](https://github.com/jalathivi/trab01/blob/master/arquivos/backup/ColetaInteligente.backup)<br>
+<b>[Grupo responsável por testar/restaurar o banco de dados]</b>: [Fulano1, Fulano2, ... ,FulanoN]<br>
+
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
         a) Outros grupos deverão ser capazes de restaurar o banco 
