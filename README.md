@@ -466,13 +466,13 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](/images/Consultas/9.7/groupby_from_lixeira_capacidades.png)<br><br>
 
 
-	SELECT cod_status, COUNT(*) 
+	SELECT cod_status, COUNT(*)
 	FROM situacao_operacional GROUP BY cod_status;
 ![](/images/Consultas/9.7/groupby_from_SO_status.png)<br><br>
 
 	
-	SELECT cod_coletor, COUNT(*) AS QTD_REGISTROS 
-	FROM situacao_operacional GROUP BY cod_coletor;
+	SELECT cod_cidadao, COUNT(*) AS QTD_DESCARTES 
+	FROM descarte GROUP BY cod_cidadao ORDER BY cod_cidadao;
 ![](images/Consultas/9.7/groupby_from_situacaoop.png)<br><br>
 
 
