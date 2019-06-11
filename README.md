@@ -596,7 +596,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 
 ### 11 Backup completo do banco de dados postgres
 	
-[ColetaInteligente.backup](https://github.com/jalathivi/trab01/blob/master/arquivos/backup/ColetaInteligente.backup)<br>
+Arquivo de Backup: [ColetaInteligente.backup](https://github.com/jalathivi/trab01/blob/master/arquivos/backup/ColetaInteligente.backup)<br>
 <b>[Grupo responsável por testar/restaurar o banco de dados]</b>: [Fulano1, Fulano2, ... ,FulanoN]<br>
 
 
