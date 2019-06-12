@@ -601,7 +601,7 @@ Arquivo de Backup: [ColetaInteligente.backup](https://github.com/jalathivi/trab0
 
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
-Arquivo de Tutorial: [tutorial.pdf](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/tutorial_restauracao_e_execucao_procedimentos.pdf)<br>
+Arquivo Tutorial: [Tutorial.pdf](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/tutorial_restauracao_e_execucao_procedimentos.pdf)<br>
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 >## Marco de Entrega Final em: 11/06/2019 <br>
