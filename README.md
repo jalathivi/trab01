@@ -24,8 +24,8 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 #
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 
-[Protótipo Lixeira Inteligente - Cidadão](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/pdf/prototipo_cidadao.pdf)<br>
-[Protótipo Lixeira Inteligente - Motorista](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/pdf/prototipo_motorista.pdf)<br>
+[Protótipo Tela Lixeira Inteligente](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/prototipo_tela_lixeira_inteligente.pdf)<br>
+
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
@@ -578,7 +578,7 @@ O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobr
 ![](/images/Consultas/9.10/img3.PNG)<br><br>
 
 #### 9.11 Relatórios e Gráficos 
-[Relatórios usando Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorios.ipynb)<br>
+[Relatórios usando Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorio/relatorios.ipynb)<br>
 
 >## Marco de Entrega 11 em: (04/06/2019)<br>
 
