@@ -13,13 +13,24 @@ Vinicius Freitas: viniciusrocha28@gmail.com<br>
 #
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 
-O sistema Lixeira Inteligente tem como objetivo auxiliar na coleta e no descarte de lixo. A aplicação auxiliará os cidadãos a encontrar a lixeira mais próxima disponível para o descarte e os coletores a percorrer o melhor trajeto  para o recolhimento de  resíduos das lixeiras consideradas como cheias.  Esse sistema tenta minimizar o problema de descarte de lixo de modo inapropriado, evitando que a cidade fique suja, e também visa criar rotas otimizadas para os coletores a fim de diminuir o desperdício de recursos durante o processo.<br>
- 
- 
+O sistema Lixeira Inteligente é uma ferramenta intermediária que apoia o processo de descarte e coleta de lixo. A aplicação auxiliará os cidadãos a encontrar a lixeira mais próxima para que ele realize o descarte de seu lixo e auxiliará os coletores a percorrer o melhor trajeto para o recolhimento do lixo das lixeiras.Uma vez que o sistema indica ao cidadão uma lixeira que não esteja cheia,
+ajuda a minimizar o problema de descarte de lixo de modo inapropriado, evitando que a cidade fique suja e, por consequência, dificultando a proliferação de insetos e transmissão de doenças. Por parte dos coletores, visa criar rotas otimizadas a fim de
+diminuir o desperdício de recursos (gasolina, tempo de trabalho, entre outros) durante o processo.<br>
+
 #
 ### 3.MINI-MUNDO<br>
 
-O sistema Lixeira Inteligente precisa armazenar as seguintes informações. Sobre o bairro é preciso armazenar o código do bairro e nome do bairro. Sobre a lixeira é necessário armazenar o código da lixeira, código do bairro, localização (longitude e latitude), volume máximo, volume atual de lixo, data/hora da atualização do volume. A lixeira tem Status de Situação Operacional, composto pelo código da lixeira, código do coletor, status, descrição e data/hora. Sobre o cidadão será armazenado o código do cidadão, nome, email, senha e a sua localização (longitude e latitude). Para o coletor é preciso armazenar o código do coletor,  localização atual (longitude e latitude), placa, marca, modelo, ano, volume máximo. A versão do aplicativo voltado para o cidadão necessita do cadastro do mesmo  para permitir visualizar  as lixeiras mais próximas de sua localização com o menor volume de lixo contido.  A versão do aplicativo voltado para os coletores apresentará o melhor caminho para realizar a coleta no bairro selecionado, além de permitir que ele atualize o status operacional da lixeira. A rota será criada com base na prioridade de coleta, ou seja, a necessidade de recolher os lixos nas lixeiras das quais atingirem o volume de resíduo maior ou igual a 70% do seu volume máximo.  Somente um administrador poderá alterar as rotas.<br>
+A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um código de identificação, bairro, localização
+geográfica, capacidade máxima em volume. Ela consegue calcular o volume de lixo que foi descartado ou coletado. O sitema reconhe a lixeira como cheia quando o volume de lixo acumulado estiver acima de 70% da sua capacidade.
+
+O cidadão que deseja usar o sistema deve realizar o cadastrado com a informação do seu nome e o número de telefone, além de permitir que a sua localização geográfica atual seja identificada. Ao cidadão usuário do sistema é apresentado a rota de descarte para a lixeira vazia mais próxima por meio de um sistema externo de mapas e navegação que recebe a localização do  cidadão e a localização da lixeira vazia para gerar a rota de descarte.
+
+O funcionário motorista é caracterizado pelo seu nome, CPF e CNH. Ele dirige o caminhão coletor, e esse veículo é descrito por uma placa, marca, modelo, ano, capacidade máxima em volume, além de sua localização geográfica atual.
+
+A rota de coleta que o caminhão irá percorrer é feita para um bairro e será gerada por um sistema externo de mapas e navegação
+que receberá informações de localização do caminhão e das lixeira cheias, e assim, ele retornará a rota. Na criação da rota o sistema  só deve acrescentar as lixeiras inteligentes cheias cuja a soma total de volume de lixo contido não ultrapasse a capacidade do caminhão coletor. Outras lixeiras não cheias cujo ponto de localização geográfica encontrasse entre os pontos de localização das lixeiras cheias também devem ser acrescentadas na rota de coleta. Durante o processo de coleta de lixo pode ser registrado a situação operacional da lixeira pra informar, por exemplo, que ela está quebrada.
+
+Para fins de relatório, informações de descarte serão registradas com os dados referentes à data, hora, o volume de lixo descartado e o responsável pelo descarte. Assim como o registro da coleta que terá informação da data, hora, o volume de lixo coletados e o responsável pela coleta.<br>
 
 #
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
