@@ -87,7 +87,7 @@ CREATE TABLE COLETA (
 );
 
 CREATE TABLE DESCARTE (
-	cod_lixeira INTEGER,
+    cod_lixeira INTEGER,
     cod_cidadao INTEGER,
     data_descarte DATE,
     hora_descarte TIME,
