@@ -13,15 +13,14 @@ Vinicius Freitas: viniciusrocha28@gmail.com<br>
 #
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 
-O sistema Lixeira Inteligente é uma ferramenta intermediária que apoia o processo de descarte e coleta de lixo. A aplicação auxiliará os cidadãos a encontrar a lixeira mais próxima para que ele realize o descarte de seu lixo e auxiliará os coletores a percorrer o melhor trajeto para o recolhimento do lixo das lixeiras.Uma vez que o sistema indica ao cidadão uma lixeira que não esteja cheia,
+O sistema Lixeira Inteligente é uma ferramenta intermediária que apoia o processo de descarte e coleta de lixo. A aplicação auxiliará os cidadãos a encontrar a lixeira mais próxima para que ele realize o descarte de seu lixo e auxiliará os coletores a percorrer o melhor trajeto para o recolhimento do lixo das lixeiras. Uma vez que o sistema indica ao cidadão uma lixeira que não esteja cheia,
 ajuda a minimizar o problema de descarte de lixo de modo inapropriado, evitando que a cidade fique suja e, por consequência, dificultando a proliferação de insetos e transmissão de doenças. Por parte dos coletores, visa criar rotas otimizadas a fim de
 diminuir o desperdício de recursos (gasolina, tempo de trabalho, entre outros) durante o processo.<br>
 
 #
 ### 3.MINI-MUNDO<br>
 
-A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um código de identificação, bairro, localização
-geográfica, capacidade máxima em volume. Ela consegue calcular o volume de lixo que foi descartado ou coletado. O sitema reconhe a lixeira como cheia quando o volume de lixo acumulado estiver acima de 70% da sua capacidade.
+A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um código de identificação, bairro, localização geográfica, capacidade máxima em volume. Ela consegue calcular o volume de lixo que foi descartado ou coletado. O sitema reconhe a lixeira como cheia quando o volume de lixo acumulado estiver acima de 70% da sua capacidade.
 
 O cidadão que deseja usar o sistema deve realizar o cadastrado com a informação do seu nome e o número de telefone, além de permitir que a sua localização geográfica atual seja identificada. Ao cidadão usuário do sistema é apresentado a rota de descarte para a lixeira vazia mais próxima por meio de um sistema externo de mapas e navegação que recebe a localização do  cidadão e a localização da lixeira vazia para gerar a rota de descarte.
 
