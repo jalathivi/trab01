@@ -57,7 +57,12 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 #
 ### 5.MODELO CONCEITUAL<br>
 
+<b>NOTACAO ENTIDADE RELACIONAMENTO<b>
 ![](images/modelagem/modelo_conceitual.png)
+<br>
+<b>NOTACAO UML<b>
+![](images/modelagem/modelo_uml.png)	
+
 
 #### 5.1 Validação do Modelo Conceitual
 <b>[Lista de Compras Online]</b>: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos]<br>
