@@ -24,7 +24,7 @@ A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um
 
 O cidadão que deseja usar o sistema deve realizar o cadastrado com a informação do seu nome e o número de telefone, além de permitir que a sua localização geográfica atual seja identificada. Ao cidadão usuário do sistema é apresentado a rota de descarte para a lixeira vazia mais próxima por meio de um sistema externo de mapas e navegação que recebe a localização do  cidadão e a localização da lixeira vazia para gerar a rota de descarte.
 
-O funcionário motorista é caracterizado pelo seu nome, CPF e CNH. Ele dirige o caminhão coletor, e esse veículo é descrito por uma placa, marca, modelo, ano, capacidade máxima em volume, além de sua localização geográfica atual.
+O funcionário motorista é caracterizado pelo seu nome e CNH. Ele dirige o caminhão coletor, e esse veículo é descrito por uma placa, marca, modelo, ano, capacidade máxima em volume, além de sua localização geográfica atual.
 
 A rota de coleta que o caminhão irá percorrer é feita para um bairro e será gerada por um sistema externo de mapas e navegação
 que receberá informações de localização do caminhão e das lixeira cheias, e assim, ele retornará a rota. Na criação da rota o sistema  só deve acrescentar as lixeiras inteligentes cheias cuja a soma total de volume de lixo contido não ultrapasse a capacidade do caminhão coletor. Outras lixeiras não cheias cujo ponto de localização geográfica encontrasse entre os pontos de localização das lixeiras cheias também devem ser acrescentadas na rota de coleta. Durante o processo de coleta de lixo pode ser registrado a situação operacional da lixeira pra informar, por exemplo, que ela está quebrada.
