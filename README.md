@@ -20,7 +20,7 @@ diminuir o desperdício de recursos (gasolina, tempo de trabalho, entre outros) 
 #
 ### 3.MINI-MUNDO<br>
 
-A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um código de identificação, bairro, localização geográfica, capacidade máxima em volume. Ela consegue calcular o volume de lixo que foi descartado ou coletado. O sitema reconhe a lixeira como cheia quando o volume de lixo acumulado estiver acima de 70% da sua capacidade.
+A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um código de identificação, bairro, localização geográfica, capacidade máxima em volume. Ela consegue calcular o volume de lixo que foi descartado ou coletado. O sistema reconhe a lixeira como cheia quando o volume de lixo acumulado estiver acima de 70% da sua capacidade.
 
 O cidadão que deseja usar o sistema deve realizar o cadastrado com a informação do seu nome e o número de telefone, além de permitir que a sua localização geográfica atual seja identificada. Ao cidadão usuário do sistema é apresentado a rota de descarte para a lixeira vazia mais próxima por meio de um sistema externo de mapas e navegação que recebe a localização do  cidadão e a localização da lixeira vazia para gerar a rota de descarte.
 
