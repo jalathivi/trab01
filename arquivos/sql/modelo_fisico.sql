@@ -26,14 +26,14 @@ CREATE TABLE MODELO (
     cod_modelo INTEGER,
     nome VARCHAR(100),
     ano INTEGER,
-    cod_marca INTEGER,
+    cod_marca INTEGER NOT NULL,
     CONSTRAINT pk_modelo PRIMARY KEY(cod_modelo),
     CONSTRAINT fk_marca_modelo FOREIGN KEY (cod_marca) REFERENCES MARCA (cod_marca)   
 );
 
 CREATE TABLE CAMINHAO (
     cod_caminhao INTEGER,
-    cod_modelo INTEGER,
+    cod_modelo INTEGER NOT NULL,
     placa VARCHAR(7) UNIQUE,
     capacidade FLOAT,
     latitude FLOAT,
@@ -42,8 +42,8 @@ CREATE TABLE CAMINHAO (
 );
 
 CREATE TABLE ALOCA (
-    cod_motorista INTEGER,
-    cod_caminhao INTEGER,
+    cod_motorista INTEGER NOT NULL,
+    cod_caminhao INTEGER NOT NULL,
     data_alocacao DATE,
     hora_inic TIME,
     hora_fim TIME,
@@ -59,7 +59,7 @@ CREATE TABLE BAIRRO (
 
 CREATE TABLE LIXEIRA (
     cod_lixeira INTEGER ,
-    cod_bairro INTEGER,
+    cod_bairro INTEGER NOT NULL,
     capacidade FLOAT,
     latitude FLOAT,
     longitude FLOAT,
@@ -76,7 +76,7 @@ CREATE TABLE STATUS (
 
 CREATE TABLE COLETA (
     cod_coleta INTEGER,
-    cod_lixeira INTEGER,
+    cod_lixeira INTEGER NOT NULL,
     cod_caminhao INTEGER,
     data_coleta DATE,
     hora_coleta TIME,
@@ -87,7 +87,7 @@ CREATE TABLE COLETA (
 );
 
 CREATE TABLE DESCARTE (
-    cod_lixeira INTEGER,
+    cod_lixeira INTEGER NOT NULL,
     cod_cidadao INTEGER,
     data_descarte DATE,
     hora_descarte TIME,
@@ -97,8 +97,8 @@ CREATE TABLE DESCARTE (
 );
  
 CREATE TABLE SITUACAO_OPERACIONAL (
-    cod_coleta INTEGER,
-    cod_status INTEGER,
+    cod_coleta INTEGER NOT NULL,
+    cod_status INTEGER NOT NULL,
     CONSTRAINT fk_coleta_situacao_operacioanal FOREIGN KEY (cod_coleta) REFERENCES COLETA (cod_coleta),
     CONSTRAINT fk_status_situacao_operacioanal FOREIGN KEY (cod_status) REFERENCES STATUS (cod_status)
 );
