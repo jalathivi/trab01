@@ -617,12 +617,13 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 
 ### 11 Backup completo do banco de dados postgres
 	
-Arquivo de Backup: [ColetaInteligente.backup](https://github.com/jalathivi/trab01/blob/master/arquivos/backup/ColetaInteligente.backup)<br>
-<b>[Grupo responsável por testar/restaurar o banco de dados]</b>: [Lista de Compras Online]: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos] <br>
+[Arquivo Backup](https://github.com/jalathivi/trab01/blob/master/arquivos/backup/ColetaInteligente.backup)<br>
+<b>[Grupo responsável por testar/restaurar o banco de dados]</b>: <br>
+[Lista de Compras Online]: [Matheus Garcias, Letícia Teixeira, Júlia Miranda, Henrique Bastos] <br>
 
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
-Arquivo Tutorial: [Tutorial.pdf](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/tutorial_restauracao_e_execucao_procedimentos.pdf)<br>
+[Tutorial](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/tutorial_restauracao_e_execucao_procedimentos.pdf)<br>
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 >## Marco de Entrega Final em: 11/06/2019 <br>
