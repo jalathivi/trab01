@@ -175,16 +175,16 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 [Criação, Inserção e Exclusão das tabelas](https://github.com/jalathivi/trab01/blob/master/arquivos/sql/create_insert_drop.sql)<br>
 
 #### 8.4 PRINCIPAIS FLUXOS DE INFORMAÇÃO E PRINCIPAIS TABELAS DO SISTEMA
-##### Os principais fluxos de dados de informação no sistema em desenvolvimento
+#### Os principais fluxos de dados de informação no sistema em desenvolvimento
 - Descarte (Volume de lixo descartados nas lixeiras, envolve os cidadãos e as lixeiras)
 - Coleta (Volume de lixo coletados nas lixeiras, envolve os caminhãos e as lixeiras)
 - Situacao_Operacional (Status operacional das lixeiras, envolve a coleta e os status das lixeiras)
 - Aloca (Registro alocação dos caminhãos pelos coletores, envolve os motoristas e os caminhãos)
-##### As tabelas que conterão mais dados no sistema em desenvolvimento
+#### As tabelas que conterão mais dados no sistema em desenvolvimento
 - Descarte 
 - Coleta
 - Cidadao
-##### As 5 principais tabelas do sistema em desenvolvimento
+#### As 5 principais tabelas do sistema em desenvolvimento
 - Descarte 
 - Coleta 
 - Cidadao 
