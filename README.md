@@ -46,7 +46,6 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 - Relatório de uso dos caminhões: contagem da frequência de alocação de cada veículo de coleta.
 - Relatório da situação operacional das lixeiras que informe status das lixeiras e quantas lixeiras se encontram naquela situação.
 - Relatório de listagem das lixeiras quebradas, informando seus dados para uma futura manutenção.
-
  
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
