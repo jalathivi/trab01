@@ -521,21 +521,27 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 
 
 	CREATE VIEW lixeiraComLixo AS 
-	SELECT descarte.cod_lixeira, SUM(descarte.volume) AS volume, bairro.nome as bairro FROM descarte
-	LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
-	INNER JOIN lixeira ON (lixeira.cod_lixeira = coleta.cod_lixeira)
-	INNER JOIN bairro ON (bairro.cod_bairro = lixeira.cod_bairro)
-	WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira, bairro
-	ORDER BY descarte.cod_lixeira
+	SELECT lixeira.cod_lixeira,
+	lixeira.capacidade, 
+	SUM(descarte.volume) AS volumeAtual,
+	(SUM(descarte.volume)/lixeira.capacidade) as nivel_Atual,
+	bairro.nome as bairro FROM lixeira
+	FULL OUTER JOIN descarte ON (lixeira.cod_lixeira = descarte.cod_lixeira)
+	FULL OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
+	FULL OUTER JOIN bairro ON (bairro.cod_bairro = lixeira.cod_bairro)
+	WHERE descarte.data_descarte > coleta.data_coleta 
+	OR (descarte.data_descarte = coleta.data_coleta AND descarte.hora_descarte > coleta.hora_coleta)
+	GROUP BY lixeira.cod_lixeira, lixeira.capacidade, bairro
+	ORDER BY lixeira.cod_lixeira
 ![](/images/Consultas/9.9/img1.png)<br><br>
 
 
 	CREATE VIEW lixeiraVazia AS 
 	SELECT lixeira.cod_lixeira, bairro.nome as bairro FROM lixeira 
 	INNER JOIN bairro ON (bairro.cod_bairro = lixeira.cod_bairro)
-	WHERE cod_lixeira NOT IN (SELECT descarte.cod_lixeira FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira)
-	WHERE descarte.data_descarte > coleta.data_coleta  GROUP BY descarte.cod_lixeira 
-	ORDER BY descarte.cod_lixeira)
+	WHERE cod_lixeira NOT IN ( SELECT descarte.cod_lixeira FROM descarte LEFT OUTER JOIN coleta ON (descarte.cod_lixeira = coleta.cod_lixeira) 
+	WHERE descarte.data_descarte > coleta.data_coleta OR (descarte.data_descarte = coleta.data_coleta AND descarte.hora_descarte > coleta.hora_coleta) 
+	GROUP BY descarte.cod_lixeira ORDER BY descarte.cod_lixeira)
 ![](/images/Consultas/9.9/img2.png)<br><br>
 
 
