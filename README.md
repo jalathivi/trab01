@@ -604,16 +604,8 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 >## Marco de Entrega 11 em: (04/06/2019)<br>
 
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
-#### a) Pontos Chave do MINI-MUNDO
-#### b) 5 principais tabelas/fluxos do sistema
-#### c) Perguntas que podem ser respondidads com o sistema proposto
-#### d) Modelo Conceitual
-#### e) Modelo Lógico
-#### f) Relatórios e Gráficos mais importantes para o sistema (mínimo 5) 
-#### --> Tempo de apresentação 10 minutos
 
-
-
+[Slides](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/documentacao-slides.pdf)
 
 ### 11 Backup completo do banco de dados postgres
 	
