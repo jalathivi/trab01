@@ -22,7 +22,7 @@ diminuir o desperdício de recursos (gasolina, tempo de trabalho, entre outros) 
 
 A lixeira inteligente é lixeira fabricada com um sensor embutido. Ela possui um código de identificação, bairro, localização geográfica, capacidade máxima em volume. Ela consegue calcular o volume de lixo que foi descartado ou coletado. O sistema reconhe a lixeira como cheia quando o volume de lixo acumulado estiver acima de 70% da sua capacidade.
 
-O cidadão que deseja usar o sistema deve realizar o cadastrado com a informação do seu nome e o número de telefone, além de permitir que a sua localização geográfica atual seja identificada. Ao cidadão usuário do sistema é apresentado a rota de descarte para a lixeira vazia mais próxima por meio de um sistema externo de mapas e navegação que recebe a localização do  cidadão e a localização da lixeira vazia para gerar a rota de descarte.
+O cidadão que deseja usar o sistema deve realizar o cadastrado com a informação do seu nome, email e senha, além de permitir que a sua localização geográfica atual seja identificada. Ao cidadão usuário do sistema é apresentado a rota de descarte para a lixeira vazia mais próxima por meio de um sistema externo de mapas e navegação que recebe a localização do  cidadão e a localização da lixeira vazia para gerar a rota de descarte.
 
 O funcionário motorista é caracterizado pelo seu nome e CNH. Ele dirige o caminhão coletor, e esse veículo é descrito por uma placa, marca, modelo, ano, capacidade máxima em volume, além de sua localização geográfica atual.
 
@@ -39,6 +39,8 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
 
+- Volume atual de uma lixeira e listagem das lixeiras que se encontram cheias
+- Localização das lixeiras para obtenção de rota: de coleta, perto da localização estabelecida pelo cidadão; de descarte, na região estabelecida pelo coletor
 - Relatório da quantidade de lixo coletado em cada bairro, em determinada rota.
 - Relatório de uso da lixeira: quantidade de descartes que recebeu e o volume total descartado na mesma.
 - Relatório de uso dos caminhões: contagem da frequência de alocação de cada veículo de coleta.
@@ -330,7 +332,6 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
->## Marco de Entrega 07 em: (20/05/2019)<br>
 
     UPDATE BAIRRO SET nome = 'Jardim Limoeiro' WHERE cod_bairro = 6;
 ![](images/Consultas/9.5/set_nomebairro.PNG)<br><br>
@@ -457,8 +458,7 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 	ORDER BY caminhao.cod_caminhao;
 ![](/images/Consultas/9.6/7.PNG)<br><br>
 
-        
->## Marco de Entrega 08 em: (21/05/2019)<br>
+       
         
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 
@@ -601,8 +601,6 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 #### 9.11 Relatórios e Gráficos 
 [Relatórios usando Jupyter](https://github.com/jalathivi/trab01/blob/master/arquivos/relatorio/relatorios.ipynb)<br>
 
->## Marco de Entrega 11 em: (04/06/2019)<br>
-
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 [Slides](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/documentacao-slides.pdf)
@@ -618,7 +616,11 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 [Tutorial](https://github.com/jalathivi/trab01/blob/master/arquivos/pdf/tutorial_restauracao_e_execucao_procedimentos.pdf)<br>
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
->## Marco de Entrega Final em: 11/06/2019 <br>
+- Estabelecer as relações relevantes para criação de consultas
+- Identificar corretamente quais atributos eram necessários para cada tabela
+- Criar os dados para as tabelas, já que não havia uma base de dados pronta para uso
+- Tirar os prints para cada consulta foi cansativo, visto que após a modificação do modelo do sistema todas imagens precisaram ser substituídas e devidamente refeitas
+- Verificar quais relatórios eram realmente necessários e quais informações eram relevantes para ser adicionada em cada um deles
         
 ### 14  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
