@@ -58,10 +58,10 @@ Para fins de relatório, informações de descarte serão registradas com os dad
 #
 ### 5.MODELO CONCEITUAL<br>
 
-<b>NOTACAO ENTIDADE RELACIONAMENTO<b>
+<b>NOTACAO ENTIDADE RELACIONAMENTO</b>
 ![](images/modelagem/modelo_conceitual.png)
 <br>
-<b>NOTACAO UML<b>
+<b>NOTACAO UML</b>
 ![](images/modelagem/modelo_uml.png)	
 
 
